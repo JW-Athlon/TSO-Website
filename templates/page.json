@@ -19,6 +19,7 @@
     },
     "collection_list_Wbxzek": {
       "type": "collection-list",
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "About Us",
