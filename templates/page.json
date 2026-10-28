@@ -187,6 +187,77 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multirow_LaGEM6": {
+      "type": "multirow",
+      "blocks": {
+        "row_DDTUjd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/birdwatch.jpg",
+            "caption": "",
+            "heading": "Bird Watching",
+            "text": "<p>Check off your life list with Turbine HD</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_wyaQD9": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/tent.jpg",
+            "caption": "",
+            "heading": "Camping",
+            "text": "<p>Enjoy your surroundings with Polar HD</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_7VGXc7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/hunting.jpg",
+            "caption": "",
+            "heading": "Hunting",
+            "text": "<p>It's in your sights with Marlin HD</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_ewHdCd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/sporting-events-3.jpg",
+            "caption": "",
+            "heading": "Sporting Events",
+            "text": "<p>Get in on the action with Coral HD</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_DDTUjd",
+        "row_wyaQD9",
+        "row_7VGXc7",
+        "row_ewHdCd"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -194,6 +265,7 @@
     "collection_list_Wbxzek",
     "image_banner_TkpR8m",
     "image_with_text_tqFGKG",
-    "multicolumn_QhE7zg"
+    "multicolumn_QhE7zg",
+    "multirow_LaGEM6"
   ]
 }
