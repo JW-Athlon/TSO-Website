@@ -46,7 +46,7 @@
         "text_BdHtm7": {
           "type": "text",
           "settings": {
-            "text": "Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game. TSO is there to ensure you see every detail in vivd clarity.&nbsp;Easy ordering, and no-hassle returns",
+            "text": "Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game, TSO is there to ensure you see every detail in vivd clarity.&nbsp;Easy ordering, and no-hassle returns",
             "text_style": "body"
           }
         },
@@ -67,17 +67,16 @@
         "text_BdHtm7",
         "buttons_Y9FqnR"
       ],
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/about-us-image_97406e40-09dc-49ce-a0f9-08a6d0802f2b.png",
-        "image_overlay_opacity": 0,
+        "image": "shopify://shop_images/dustin_tso.png",
+        "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": false,
+        "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
@@ -114,6 +113,7 @@
         "text_YV9MLq",
         "button_kBX8Ch"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/about-us-image_97406e40-09dc-49ce-a0f9-08a6d0802f2b.png",
