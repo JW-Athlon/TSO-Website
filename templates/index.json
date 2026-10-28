@@ -51,7 +51,7 @@
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "top-right",
+        "desktop_content_position": "middle-right",
         "desktop_content_alignment": "center",
         "show_text_box": false,
         "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
