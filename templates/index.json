@@ -14,10 +14,9 @@
       "blocks": {
         "heading_gyg9xe": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Welcome to Trusted Sporting Optics",
-            "heading_size": "h2"
+            "heading": "Trusted Sporting Optics",
+            "heading_size": "h0"
           }
         },
         "text_axenwe": {
@@ -52,10 +51,10 @@
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "image_behavior": "none",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-right",
         "desktop_content_alignment": "center",
-        "show_text_box": true,
-        "color_scheme": "scheme-1d55e10b-0ba3-44bc-a0a0-637393ea8a66",
+        "show_text_box": false,
+        "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
