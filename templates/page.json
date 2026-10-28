@@ -11,53 +11,26 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 24,
+        "padding_top": 28,
         "padding_bottom": 0
       }
     },
-    "rich_text_fKLNCA": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_brTRAf": {
-          "type": "heading",
-          "settings": {
-            "heading": "Optics You Can Trust",
-            "heading_size": "h1"
-          }
-        },
-        "text_URWBUH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game. TSO is there to ensure you see every detail in vivd clarity.&nbsp;</p><p>Easy ordering, and no-hassle returns</p>"
-          }
-        },
-        "button_LAYk7M": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_brTRAf",
-        "text_URWBUH",
-        "button_LAYk7M"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
+    "collection_list_Wbxzek": {
+      "type": "collection-list",
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "About Us",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 0
       }
     },
     "image_banner_TkpR8m": {
@@ -218,7 +191,7 @@
   },
   "order": [
     "main",
-    "rich_text_fKLNCA",
+    "collection_list_Wbxzek",
     "image_banner_TkpR8m",
     "image_with_text_tqFGKG",
     "multicolumn_QhE7zg"

@@ -17,7 +17,7 @@
     "type_body_font": "anonymous_pro_n4",
     "body_scale": 105,
     "page_width": 1400,
-    "spacing_sections": 20,
+    "spacing_sections": 16,
     "spacing_grid_horizontal": 24,
     "spacing_grid_vertical": 24,
     "animations_reveal_on_scroll": true,
@@ -151,7 +151,7 @@
           "text": "#3a5eab",
           "button": "#f99d25",
           "button_label": "#fcfcfc",
-          "secondary_button_label": "#020912",
+          "secondary_button_label": "#FFFFFF",
           "shadow": "#020912"
         }
       },
