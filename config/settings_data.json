@@ -41,7 +41,7 @@
     "inputs_radius": 0,
     "inputs_shadow_opacity": 0,
     "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 4,
+    "inputs_shadow_vertical_offset": -4,
     "inputs_shadow_blur": 5,
     "card_style": "standard",
     "card_image_padding": 0,
@@ -146,10 +146,10 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#FFFFFF",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#3A5EAB",
-          "button": "#F99D25",
+          "text": "#3a5eab",
+          "button": "#f99d25",
           "button_label": "#fcfcfc",
           "secondary_button_label": "#020912",
           "shadow": "#020912"
@@ -157,11 +157,11 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#1C293A",
+          "background": "#1c293a",
           "background_gradient": "",
-          "text": "#FFFFFF",
+          "text": "#ffffff",
           "button": "#020912",
-          "button_label": "#FFFFFF",
+          "button_label": "#ffffff",
           "secondary_button_label": "#020912",
           "shadow": "#020912"
         }
