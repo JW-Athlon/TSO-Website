@@ -29,7 +29,7 @@
         "text_URWBUH": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game. TSO is there to ensure you see every detail in vivd clarity.&nbsp;</p><p>Easy ordering, and no-hassle returns</p>"
           }
         },
         "button_LAYk7M": {
@@ -49,6 +49,7 @@
         "text_URWBUH",
         "button_LAYk7M"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
@@ -58,10 +59,168 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_banner_TkpR8m": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Kdw3Jj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Optics You Can Trust",
+            "heading_size": "h1"
+          }
+        },
+        "text_BdHtm7": {
+          "type": "text",
+          "settings": {
+            "text": "Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game. TSO is there to ensure you see every detail in vivd clarity.&nbsp;Easy ordering, and no-hassle returns",
+            "text_style": "body"
+          }
+        },
+        "buttons_Y9FqnR": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Kdw3Jj",
+        "text_BdHtm7",
+        "buttons_Y9FqnR"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/about-us-image_97406e40-09dc-49ce-a0f9-08a6d0802f2b.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "image_with_text_tqFGKG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_bpacRg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Optics You Can Trust",
+            "heading_size": "h2"
+          }
+        },
+        "text_YV9MLq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you’re on vacation in the Pacific Northwest, out to see on a week long cruise, or watching your child baseball game. TSO is there to ensure you see every detail in vivd clarity.&nbsp;</p><p>Easy ordering, and no-hassle returns</p>",
+            "text_style": "body"
+          }
+        },
+        "button_kBX8Ch": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bpacRg",
+        "text_YV9MLq",
+        "button_kBX8Ch"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/about-us-image_97406e40-09dc-49ce-a0f9-08a6d0802f2b.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_QhE7zg": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XRD7E4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rubber-Armor.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JktDNr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Waterproof.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DTgHdE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rainproof.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_XRD7E4",
+        "column_JktDNr",
+        "column_DTgHdE"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_fKLNCA"
+    "rich_text_fKLNCA",
+    "image_banner_TkpR8m",
+    "image_with_text_tqFGKG",
+    "multicolumn_QhE7zg"
   ]
 }
