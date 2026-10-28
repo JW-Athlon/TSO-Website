@@ -14,6 +14,7 @@
       "blocks": {
         "heading_gyg9xe": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Welcome to Trusted Sporting Optics",
             "heading_size": "h2"
@@ -21,6 +22,7 @@
         },
         "text_axenwe": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Ready for your next adventure? Grab a pair of binoculars and see every detail up close.&nbsp;",
             "text_style": "body"
@@ -28,6 +30,7 @@
         },
         "buttons_AzVnDa": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Shop Binoculars",
             "button_link_1": "shopify://collections/binoculars",
@@ -47,12 +50,12 @@
       "settings": {
         "image": "shopify://shop_images/hiking.jpg",
         "image_overlay_opacity": 20,
-        "image_height": "large",
+        "image_height": "medium",
         "image_behavior": "none",
         "desktop_content_position": "middle-center",
         "desktop_content_alignment": "center",
         "show_text_box": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-1d55e10b-0ba3-44bc-a0a0-637393ea8a66",
         "stack_images_on_mobile": true,
         "mobile_content_alignment": "center",
         "show_text_below": true
