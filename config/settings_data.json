@@ -144,10 +144,10 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#fcfcfc",
+          "background": "#FFFFFF",
           "background_gradient": "",
-          "text": "#020912",
-          "button": "#020912",
+          "text": "#3A5EAB",
+          "button": "#F99D25",
           "button_label": "#fcfcfc",
           "secondary_button_label": "#020912",
           "shadow": "#020912"
