@@ -136,7 +136,7 @@
           "settings": {
             "heading": "HD Glass",
             "icon": "check_mark",
-            "row_content": "<p>Experience bright, crisp images with HD glass and multi-coated optics designed to maximize light transmission and image contrast. Whether you're birdwatching, wildlife spotting, or enjoying outdoor adventures, Marlin HD delivers clear views with natural color reproduction and excellent detail.</p>",
+            "row_content": "<p>High-definition lenses provide bright, sharp images with improved clarity, making these binoculars ideal for bird watching, sightseeing, sporting events, and outdoor adventures.</p>",
             "page": ""
           }
         },
@@ -145,7 +145,7 @@
           "settings": {
             "heading": "Multi-Coated Optics",
             "icon": "check_mark",
-            "row_content": "<p>The proven 10x42 design offers an ideal balance of magnification, brightness, and field of view. Powerful enough for long-distance observation while remaining easy to hold steady, making it perfect for bird watching, hunting, whale watching, sporting events, and travel.</p>",
+            "row_content": "<p>Powerful 10x magnification and 25mm objective lenses deliver detailed views in a compact design that easily fits into backpacks, travel bags, and glove compartments.</p>",
             "page": ""
           }
         },
@@ -154,7 +154,7 @@
           "settings": {
             "heading": "Rubber Armor",
             "icon": "check_mark",
-            "row_content": "<p>Built to withstand wet environments and unexpected exposure to water, the rugged rubber-armored housing delivers reliable performance for birdwatching, hunting, hiking, and wildlife observation in changing weather conditions.</p>",
+            "row_content": "<p>Protective rubber armor helps absorb bumps and impacts while the rainproof construction provides dependable performance for hiking, travel, camping, and everyday outdoor use.</p>",
             "page": ""
           }
         },
@@ -172,7 +172,7 @@
           "settings": {
             "heading": "Tripod Adaptable",
             "icon": "check_mark",
-            "row_content": "<p>Compatible with tripod adapters for hands-free viewing during long observation periods. Ideal for birdwatching, wildlife observation, nature study, coastal viewing, and other outdoor activities where stability enhances the experience.</p>",
+            "row_content": "<p>Weighing only 9.5 oz, these portable binoculars are easy to carry for vacations, concerts, sporting events, wildlife viewing, and family adventures.</p>",
             "page": ""
           }
         },
@@ -181,7 +181,7 @@
           "settings": {
             "heading": "Long Eye Relief",
             "icon": "check_mark",
-            "row_content": "<p>Designed with 14.7mm eye relief to provide a comfortable viewing experience for both eyeglass wearers and non-eyeglass users. Enjoy a full field of view without eye strain during extended observation sessions.</p>",
+            "row_content": "<p>Designed with large eyepieces and eye relief for a comfortable viewing experience for both adults and kids during extended observation sessions.</p>",
             "page": ""
           }
         }
@@ -226,9 +226,9 @@
         "column_TPDidC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Waterproof.png",
-            "title": "Waterproof",
-            "text": "<p>Fully sealed, TSO binoculars are able to withstand being submersed.&nbsp;</p>",
+            "image": "shopify://shop_images/Rainproof.png",
+            "title": "Rainproof",
+            "text": "<p>Nitrogen purged provides internal protection from moisture.&nbsp;</p>",
             "link_label": "",
             "link": ""
           }
