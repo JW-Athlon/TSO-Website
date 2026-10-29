@@ -201,12 +201,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_TyqFj4": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jLkUMW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rubber-Armor.png",
+            "title": "Rubber Armor",
+            "text": "<p>An external rubber coating provides substantial protection from bumps and drops.&nbsp;</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TPDidC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Waterproof.png",
+            "title": "Waterproof",
+            "text": "<p>Fully sealed, TSO binoculars are able to withstand being submersed.&nbsp;</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jLkUMW",
+        "column_TPDidC"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "image_banner_CXMtdV",
-    "collapsible_content_LeDW4y"
+    "collapsible_content_LeDW4y",
+    "multicolumn_TyqFj4"
   ]
 }
