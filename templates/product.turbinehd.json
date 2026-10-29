@@ -103,21 +103,29 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_CXMtdV": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+    "collage_H7aVLh": {
+      "type": "collage",
+      "blocks": {
+        "image_cXpTdE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Turbine-HD-Specs-s.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_cXpTdE"
+      ],
+      "name": "t:sections.collage.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "heading": "Specifications",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "none",
         "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "collapsible_content_LeDW4y": {
@@ -128,7 +136,7 @@
           "settings": {
             "heading": "HD Glass",
             "icon": "check_mark",
-            "row_content": "<p>Experience bright, crisp images with HD glass and multi-coated optics designed to maximize light transmission and image contrast. Whether you're birdwatching, wildlife spotting, or enjoying outdoor adventures, Marlin HD delivers clear views with natural color reproduction and excellent detail.</p>",
+            "row_content": "<p>Built for outdoor enthusiasts who value simplicity and performance, these binoculars are easy to use while delivering the optical quality needed for birding, wildlife observation, sightseeing, and everyday adventures.</p>",
             "page": ""
           }
         },
@@ -137,7 +145,7 @@
           "settings": {
             "heading": "Multi-Coated Optics",
             "icon": "check_mark",
-            "row_content": "<p>The proven 10x42 design offers an ideal balance of magnification, brightness, and field of view. Powerful enough for long-distance observation while remaining easy to hold steady, making it perfect for bird watching, hunting, whale watching, sporting events, and travel.</p>",
+            "row_content": "<p>Cross more off your life list by capturing unexpected details wherever your adventures take you. HD glass and multi-coated optics deliver bright, clear images with enhanced contrast and color fidelity, helping you spot birds, wildlife, and distant subjects with impressive clarity.</p>",
             "page": ""
           }
         },
@@ -146,7 +154,7 @@
           "settings": {
             "heading": "Rubber Armor",
             "icon": "check_mark",
-            "row_content": "<p>Built to withstand wet environments and unexpected exposure to water, the rugged rubber-armored housing delivers reliable performance for birdwatching, hunting, hiking, and wildlife observation in changing weather conditions.</p>",
+            "row_content": "<p>The rainproof construction helps you stay focused on the view, even in light rain, mist, or humid environments. Combined with a lightweight roof prism design, these binoculars are easy to carry on birding trips, hunting outings, hiking trails, travel adventures, and wildlife exploration.</p>",
             "page": ""
           }
         },
@@ -173,7 +181,7 @@
           "settings": {
             "heading": "Long Eye Relief",
             "icon": "check_mark",
-            "row_content": "<p>Designed with 14.7mm eye relief to provide a comfortable viewing experience for both eyeglass wearers and non-eyeglass users. Enjoy a full field of view without eye strain during extended observation sessions.</p>",
+            "row_content": "<p>Featuring 15.5mm eye relief for a more comfortable viewing experience during extended observation sessions. Ideal for both eyeglass wearers and non-eyeglass users, helping you stay focused on the view instead of adjusting your optics.</p>",
             "page": ""
           }
         }
@@ -206,7 +214,7 @@
   "order": [
     "main",
     "related-products",
-    "image_banner_CXMtdV",
+    "collage_H7aVLh",
     "collapsible_content_LeDW4y"
   ]
 }
