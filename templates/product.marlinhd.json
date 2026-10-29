@@ -46,12 +46,13 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -193,7 +194,7 @@
         "heading_alignment": "center",
         "layout": "none",
         "container_color_scheme": "",
-        "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
+        "color_scheme": "scheme-8b6db236-ea16-40f3-81c2-11a8834a5a86",
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
