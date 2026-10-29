@@ -109,7 +109,7 @@
         "image_WxMNa4": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg"
+            "image": "shopify://shop_images/Polar-HD-Specs-s.jpg"
           }
         }
       },
@@ -136,7 +136,7 @@
           "settings": {
             "heading": "HD Glass",
             "icon": "check_mark",
-            "row_content": "<p>Experience bright, crisp images with HD glass and multi-coated optics designed to maximize light transmission and image contrast. Whether you're birdwatching, wildlife spotting, or enjoying outdoor adventures, Marlin HD delivers clear views with natural color reproduction and excellent detail.</p>",
+            "row_content": "<p>Experience bright, sharp images with premium HD glass and a Porro prism optical system designed for exceptional light transmission and clarity. These 10x50 binoculars for adults deliver outstanding performance for bird watching, wildlife viewing, and outdoor observation.</p>",
             "page": ""
           }
         },
@@ -145,7 +145,7 @@
           "settings": {
             "heading": "Multi-Coated Optics",
             "icon": "check_mark",
-            "row_content": "<p>The proven 10x42 design offers an ideal balance of magnification, brightness, and field of view. Powerful enough for long-distance observation while remaining easy to hold steady, making it perfect for bird watching, hunting, whale watching, sporting events, and travel.</p>",
+            "row_content": "<p>Enjoy the brightness, depth perception, and image quality typically found in more expensive binoculars. The Polar HD offers high-end optical performance at an exceptional value for birders, hunters, and outdoor enthusiasts.</p>",
             "page": ""
           }
         },
@@ -163,7 +163,7 @@
           "settings": {
             "heading": "Gas Purged",
             "icon": "check_mark",
-            "row_content": "<p>Designed with a fully sealed, gas-purged optical system to help prevent internal fogging and moisture intrusion.</p>",
+            "row_content": "<p>Nitrogen-purged and rainproof construction helps protect internal optics from moisture, while the rugged rubber armor provides a secure grip and reliable durability in the field.</p>",
             "page": ""
           }
         },
@@ -172,7 +172,7 @@
           "settings": {
             "heading": "Tripod Adaptable",
             "icon": "check_mark",
-            "row_content": "<p>Compatible with tripod adapters for hands-free viewing during long observation periods. Ideal for birdwatching, wildlife observation, nature study, coastal viewing, and other outdoor activities where stability enhances the experience.</p>",
+            "row_content": "<p>Ideal for bird watching, wildlife viewing, hunting, hiking, travel, and sporting events. Tripod adaptable for enhanced stability and designed to deliver dependable performance wherever your adventure takes you.</p>",
             "page": ""
           }
         },
@@ -181,7 +181,7 @@
           "settings": {
             "heading": "Long Eye Relief",
             "icon": "check_mark",
-            "row_content": "<p>Designed with 14.7mm eye relief to provide a comfortable viewing experience for both eyeglass wearers and non-eyeglass users. Enjoy a full field of view without eye strain during extended observation sessions.</p>",
+            "row_content": "<p>Featuring long eye relief, adjustable eyecups, and smooth center focus, these bird watching binoculars provide comfortable viewing for both eyeglass and non-eyeglass wearers during extended observation sessions.</p>",
             "page": ""
           }
         }
