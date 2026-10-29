@@ -226,9 +226,9 @@
         "column_TPDidC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Waterproof.png",
-            "title": "Waterproof",
-            "text": "<p>Fully sealed, TSO binoculars are able to withstand being submersed.&nbsp;</p>",
+            "image": "shopify://shop_images/Rainproof.png",
+            "title": "Rainproof",
+            "text": "<p>Nitrogen purged provides internal protection from moisture.&nbsp;</p>",
             "link_label": "",
             "link": ""
           }
