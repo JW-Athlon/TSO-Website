@@ -103,21 +103,29 @@
         "padding_bottom": 36
       }
     },
-    "image_banner_CXMtdV": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
+    "collage_JyAMnR": {
+      "type": "collage",
+      "blocks": {
+        "image_WxMNa4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_WxMNa4"
+      ],
+      "name": "t:sections.collage.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "image_behavior": "none",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": true,
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
         "color_scheme": "",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
+        "padding_top": 36,
+        "padding_bottom": 0
       }
     },
     "collapsible_content_LeDW4y": {
@@ -252,7 +260,7 @@
   "order": [
     "main",
     "related-products",
-    "image_banner_CXMtdV",
+    "collage_JyAMnR",
     "collapsible_content_LeDW4y",
     "multicolumn_TyqFj4"
   ]
