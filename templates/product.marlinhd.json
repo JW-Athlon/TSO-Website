@@ -14,6 +14,7 @@
       "blocks": {
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "body"
@@ -38,16 +39,16 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "share": {
           "type": "share",
@@ -62,8 +63,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
         "description",
+        "buy_buttons",
         "share"
       ],
       "settings": {
@@ -84,6 +85,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -100,17 +102,110 @@
         "padding_bottom": 36
       }
     },
-    "disclosures": {
-      "type": "disclosures",
+    "image_banner_CXMtdV": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "collapsible_content_LeDW4y": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_3jKhn6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "HD Glass",
+            "icon": "check_mark",
+            "row_content": "<p>Experience bright, crisp images with HD glass and multi-coated optics designed to maximize light transmission and image contrast. Whether you're birdwatching, wildlife spotting, or enjoying outdoor adventures, Marlin HD delivers clear views with natural color reproduction and excellent detail.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_WkAmNz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Multi-Coated Optics",
+            "icon": "check_mark",
+            "row_content": "<p>The proven 10x42 design offers an ideal balance of magnification, brightness, and field of view. Powerful enough for long-distance observation while remaining easy to hold steady, making it perfect for bird watching, hunting, whale watching, sporting events, and travel.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qw8hmt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Rubber Armor",
+            "icon": "check_mark",
+            "row_content": "<p>Built to withstand wet environments and unexpected exposure to water, the rugged rubber-armored housing delivers reliable performance for birdwatching, hunting, hiking, and wildlife observation in changing weather conditions.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_DXDUHF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Gas Purged",
+            "icon": "check_mark",
+            "row_content": "<p>Designed with a fully sealed, gas-purged optical system to help prevent internal fogging and moisture intrusion.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Da4NPL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tripod Adaptable",
+            "icon": "check_mark",
+            "row_content": "<p>Compatible with tripod adapters for hands-free viewing during long observation periods. Ideal for birdwatching, wildlife observation, nature study, coastal viewing, and other outdoor activities where stability enhances the experience.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wF9iJ9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Long Eye Relief",
+            "icon": "check_mark",
+            "row_content": "<p>Designed with 14.7mm eye relief to provide a comfortable viewing experience for both eyeglass wearers and non-eyeglass users. Enjoy a full field of view without eye strain during extended observation sessions.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_3jKhn6",
+        "collapsible_row_WkAmNz",
+        "collapsible_row_qw8hmt",
+        "collapsible_row_DXDUHF",
+        "collapsible_row_Da4NPL",
+        "collapsible_row_wF9iJ9"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Features",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "disclosures",
-    "related-products"
+    "related-products",
+    "image_banner_CXMtdV",
+    "collapsible_content_LeDW4y"
   ]
 }
