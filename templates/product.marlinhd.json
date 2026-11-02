@@ -345,6 +345,62 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "slideshow_AdBFX4": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_gFErKh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/66c67154-90e4-4d5a-8195-6e6d787a1c12.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_AKyPYt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/7b0f1df1-eda4-453f-ba14-dc024d5bef62.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_gFErKh",
+        "slide_AKyPYt"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "grid",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -353,6 +409,7 @@
     "collage_JyAMnR",
     "collapsible_content_LeDW4y",
     "multicolumn_Ene7rm",
-    "multicolumn_TyqFj4"
+    "multicolumn_TyqFj4",
+    "slideshow_AdBFX4"
   ]
 }
