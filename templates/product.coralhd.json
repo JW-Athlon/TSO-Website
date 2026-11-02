@@ -210,6 +210,96 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_X68nbL": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_ijiEYK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71u_KFg-FBL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hBTpBp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71lE1DCHR-L._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GmYFtJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/81WhONsvW3L._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x4N4EX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71MpOoEjtTL._AC_SL1200.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qUU68d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71zSJq8vgFL._AC_SL1200.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8r6aVd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71TXsuI0QGL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ijiEYK",
+        "column_hBTpBp",
+        "column_GmYFtJ",
+        "column_x4N4EX",
+        "column_qUU68d",
+        "column_8r6aVd"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Features?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
+    },
     "multicolumn_TyqFj4": {
       "type": "multicolumn",
       "blocks": {
@@ -262,6 +352,7 @@
     "main",
     "collage_JyAMnR",
     "collapsible_content_LeDW4y",
+    "multicolumn_X68nbL",
     "multicolumn_TyqFj4"
   ]
 }
