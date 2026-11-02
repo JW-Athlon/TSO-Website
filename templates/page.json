@@ -243,6 +243,7 @@
         "row_7VGXc7",
         "row_ewHdCd"
       ],
+      "disabled": true,
       "name": "t:sections.multirow.presets.name",
       "settings": {
         "image_height": "medium",
