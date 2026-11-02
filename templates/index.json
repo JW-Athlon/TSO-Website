@@ -113,7 +113,7 @@
         "collection": "all",
         "products_to_show": 4,
         "title": "Featured Products",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -134,11 +134,83 @@
         "padding_top": 32,
         "padding_bottom": 36
       }
+    },
+    "multirow_7TxD3P": {
+      "type": "multirow",
+      "blocks": {
+        "row_UCt9mG": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/birdwatch.jpg",
+            "caption": "",
+            "heading": "Bird Watching",
+            "text": "<p>Check off your life list with Turbine HD</p>",
+            "button_label": "Turbine HD",
+            "button_link": "shopify://products/turbine-hd-10x42-roof-prism-binoculars"
+          }
+        },
+        "row_cg3y3q": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/tent.jpg",
+            "caption": "",
+            "heading": "Camping",
+            "text": "<p>Enjoy your surroundings with Polar HD</p>",
+            "button_label": "Polar HD",
+            "button_link": "shopify://products/tso-polar-hd-10x50-binoculars"
+          }
+        },
+        "row_BXWLdU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/hunting.jpg",
+            "caption": "",
+            "heading": "Hunting",
+            "text": "<p>It's in your sights with Marlin HD</p>",
+            "button_label": "Marlin HD",
+            "button_link": "shopify://products/marlin-hd-10x42-bird-watching-binoculars"
+          }
+        },
+        "row_KkLqbk": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/sporting-events-3.jpg",
+            "caption": "",
+            "heading": "Sporting Events",
+            "text": "<p>Get in on the action with Coral HD</p>",
+            "button_label": "Coral HD",
+            "button_link": "shopify://products/tso-coral-10x25-compact-binoculars"
+          }
+        }
+      },
+      "block_order": [
+        "row_UCt9mG",
+        "row_cg3y3q",
+        "row_BXWLdU",
+        "row_KkLqbk"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner_Hhgy74",
     "image-with-text",
-    "featured_collection"
+    "featured_collection",
+    "multirow_7TxD3P"
   ]
 }
