@@ -210,6 +210,96 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_ECepVq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_y9WVjz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71_1vqYJ3EL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qwRqaH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71iLKPanZTL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cEnidq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71nzCtbxpyL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MFFKBL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71MpOoEjtTL._AC_SL1200.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Le9wcL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/71f3Hggcg2L._AC_SL1500_d757ff46-c612-48a4-8783-f72ba9089c28.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Cw7fnr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/61CNLpQ0MaL._AC_SL1500.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_y9WVjz",
+        "column_qwRqaH",
+        "column_cEnidq",
+        "column_MFFKBL",
+        "column_Le9wcL",
+        "column_Cw7fnr"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Features?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 24
+      }
+    },
     "multicolumn_jyVJQn": {
       "type": "multicolumn",
       "blocks": {
@@ -262,6 +352,7 @@
     "related-products",
     "collage_H7aVLh",
     "collapsible_content_LeDW4y",
+    "multicolumn_ECepVq",
     "multicolumn_jyVJQn"
   ]
 }
