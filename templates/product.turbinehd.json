@@ -352,6 +352,7 @@
         "slide_eV4eAw": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/35f84d6f-3862-42a6-b305-de2f710b1462.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -369,14 +370,15 @@
         "slide_hgpyUw": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/5d9c8f93-4e2e-44bd-8319-079abb60f335.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Image slide",
+            "heading": "",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": true,
+            "show_text_box": false,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
