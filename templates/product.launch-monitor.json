@@ -329,12 +329,22 @@
     "multicolumn_TyqFj4": {
       "type": "multicolumn",
       "blocks": {
+        "column_a6FpCp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/doppler.png",
+            "title": "Radar Technology",
+            "text": "<p>Built with Doppler radar technology, the LM1 measures speeds up to&nbsp;<strong>199 mph</strong>, giving golfers quick feedback during practice.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_jLkUMW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Rubber-Armor.png",
-            "title": "Rubber Armor",
-            "text": "<p>An external rubber coating provides substantial protection from bumps and drops.&nbsp;</p>",
+            "image": "shopify://shop_images/lightweight.png",
+            "title": "Compact & Lightweight",
+            "text": "<p>At only&nbsp;<strong>5.6 oz</strong>, the TSO-LM1 has a&nbsp;<strong>5.31 × 3.35 × 0.94 in</strong>&nbsp;body that makes it easy to carry, set up, and use whenever you’re ready to practice.</p>",
             "link_label": "",
             "link": ""
           }
@@ -342,15 +352,16 @@
         "column_TPDidC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Waterproof.png",
-            "title": "Waterproof",
-            "text": "<p>Fully sealed, TSO binoculars are able to withstand being submersed.&nbsp;</p>",
+            "image": "shopify://shop_images/sunlight-readable.png",
+            "title": "Built for Outdoors",
+            "text": "<p>The TSO-LM1 features a&nbsp;<strong>400 × 300 sunlight-readable LCD</strong>&nbsp;that uses available ambient light to remain clear and easy to read in bright conditions.</p><p></p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
+        "column_a6FpCp",
         "column_jLkUMW",
         "column_TPDidC"
       ],
@@ -358,18 +369,18 @@
       "settings": {
         "title": "Performance Features Explained",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 24,
+        "padding_bottom": 32
       }
     },
     "slideshow_AdBFX4": {
