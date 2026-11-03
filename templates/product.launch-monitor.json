@@ -390,17 +390,17 @@
           "settings": {
             "image": "shopify://shop_images/Asset_8_4x_1.png",
             "image_overlay_opacity": 0,
-            "heading": "",
+            "heading": "TSO LM1",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "color_scheme": "scheme-1"
           }
         },
         "slide_AKyPYt": {
@@ -408,13 +408,13 @@
           "settings": {
             "image": "shopify://shop_images/Asset_10_4x_1.png",
             "image_overlay_opacity": 0,
-            "heading": "",
+            "heading": "TSO LM1",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "show_text_box": false,
+            "show_text_box": true,
             "box_align": "middle-center",
             "text_alignment": "center",
             "text_alignment_mobile": "center",
