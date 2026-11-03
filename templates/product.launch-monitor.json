@@ -161,7 +161,7 @@
           "settings": {
             "heading": "Doppler Radar",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The TSO LM1 uses Doppler radar technology to provide fast, convenient speed measurement during your practice sessions.</p>",
             "page": ""
           }
         },
@@ -170,7 +170,7 @@
           "settings": {
             "heading": "Reads up to 199 MPH",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Using Doppler radar technology, the TSO-LM1 measures speeds up to <strong>199 mph</strong>, giving golfers quick feedback during practice.</p>",
             "page": ""
           }
         },
@@ -179,7 +179,7 @@
           "settings": {
             "heading": "Stores up to 500 Shots",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The TSO-LM1 can store up to 500 shots, allowing you to review previous results and better understand your performance throughout a practice session.</p>",
             "page": ""
           }
         },
@@ -188,7 +188,7 @@
           "settings": {
             "heading": "Sunlight-Readable LCD",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The TSO-LM1 features a&nbsp;400 × 300 sunlight-readable LCD that uses available ambient light to remain clear and easy to read in bright outdoor conditions.</p>",
             "page": ""
           }
         },
@@ -197,7 +197,7 @@
           "settings": {
             "heading": "Compact & Lightweight",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The TSO LM1's compact&nbsp;5.31 × 3.35 × 0.94 in body and 5.6 oz weight makes it easy to carry, set up, and use whenever without adding unnecessary weight.</p>",
             "page": ""
           }
         },
@@ -206,7 +206,7 @@
           "settings": {
             "heading": "Rechargeable Battery",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>A built-in rechargeable battery eliminates the need to constantly replace disposable batteries. Charge it, pack it in your golf bag, and you're ready for your next practice session.</p>",
             "page": ""
           }
         }
@@ -219,7 +219,6 @@
         "collapsible_row_Da4NPL",
         "collapsible_row_wF9iJ9"
       ],
-      "disabled": true,
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
@@ -232,8 +231,8 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 24,
-        "padding_bottom": 40
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "multicolumn_Ene7rm": {
@@ -310,7 +309,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Features",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "portrait",
@@ -322,7 +321,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 24,
+        "padding_top": 0,
         "padding_bottom": 24
       }
     },
@@ -389,7 +388,7 @@
         "slide_gFErKh": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/66c67154-90e4-4d5a-8195-6e6d787a1c12.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
+            "image": "shopify://shop_images/Asset_8_4x_1.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
@@ -407,7 +406,7 @@
         "slide_AKyPYt": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/7b0f1df1-eda4-453f-ba14-dc024d5bef62.__CR0_0_1940_1200_PT0_SX970_V1.jpg",
+            "image": "shopify://shop_images/Asset_10_4x_1.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
