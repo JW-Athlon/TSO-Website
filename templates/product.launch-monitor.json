@@ -231,8 +231,8 @@
         "open_first_collapsible_row": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 24,
+        "padding_bottom": 40
       }
     },
     "multicolumn_Ene7rm": {
@@ -241,7 +241,7 @@
         "column_Jrh8ix": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/71ugFdav3-L._AC_SL1500.jpg",
+            "image": "shopify://shop_images/Frame_351_1.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -251,7 +251,7 @@
         "column_H8iVfr": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/71EnlAfcNOL._AC_SL1500.jpg",
+            "image": "shopify://shop_images/Frame_355_1.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -261,7 +261,7 @@
         "column_EVM3EW": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/71ugSiCuNXL._AC_SL1500.jpg",
+            "image": "shopify://shop_images/Frame_353_1.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -271,7 +271,7 @@
         "column_HnVcQe": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/71MpOoEjtTL._AC_SL1200.jpg",
+            "image": "shopify://shop_images/Frame_352_1.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -281,7 +281,7 @@
         "column_bYcYHR": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/71f3Hggcg2L._AC_SL1500.jpg",
+            "image": "shopify://shop_images/Frame_354_1.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -291,7 +291,7 @@
         "column_KBHjtJ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/61cLgObgRGL._AC_SL1500.jpg",
+            "image": "shopify://shop_images/Frame_356_1_5aa17f60-2610-4b8f-a0ff-3b80463866c2.png",
             "title": "",
             "text": "",
             "link_label": "",
@@ -309,13 +309,13 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Features?",
+        "title": "Features",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
