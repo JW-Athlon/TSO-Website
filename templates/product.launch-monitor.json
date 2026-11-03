@@ -401,6 +401,49 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "rich_text_cPEFV7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AhpmUM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Specifications",
+            "heading_size": "h1"
+          }
+        },
+        "text_zDyHmQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>LM1 Doppler Radar Golf Swing Monitor | Golf swing training device<br/>Practice focus | Track your swing sessions and support consistent practice<br/>Designed for | Golfers looking to build a more informed training routine<br/>Learn more | Explore the LM1 product details before you buy</p>"
+          }
+        },
+        "button_WCbxBY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AhpmUM",
+        "text_zDyHmQ",
+        "button_WCbxBY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -410,6 +453,7 @@
     "collapsible_content_LeDW4y",
     "multicolumn_Ene7rm",
     "multicolumn_TyqFj4",
-    "slideshow_AdBFX4"
+    "slideshow_AdBFX4",
+    "rich_text_cPEFV7"
   ]
 }
