@@ -134,7 +134,7 @@
         "collapsible_row_3jKhn6": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "HD Glass",
+            "heading": "Doppler Radar",
             "icon": "check_mark",
             "row_content": "<p>Experience bright, crisp images with HD glass and multi-coated optics designed to maximize light transmission and image contrast. Whether you're birdwatching, wildlife spotting, or enjoying outdoor adventures, Marlin HD delivers clear views with natural color reproduction and excellent detail.</p>",
             "page": ""
@@ -143,7 +143,7 @@
         "collapsible_row_WkAmNz": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Multi-Coated Optics",
+            "heading": "Reads up to 199 MPH",
             "icon": "check_mark",
             "row_content": "<p>The proven 10x42 design offers an ideal balance of magnification, brightness, and field of view. Powerful enough for long-distance observation while remaining easy to hold steady, making it perfect for bird watching, hunting, whale watching, sporting events, and travel.</p>",
             "page": ""
@@ -152,16 +152,16 @@
         "collapsible_row_qw8hmt": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Rubber Armor",
+            "heading": "Stores up to 500 Shots",
             "icon": "check_mark",
-            "row_content": "<p>Built to withstand wet environments and unexpected exposure to water, the rugged rubber-armored housing delivers reliable performance for birdwatching, hunting, hiking, and wildlife observation in changing weather conditions.</p>",
+            "row_content": "",
             "page": ""
           }
         },
         "collapsible_row_DXDUHF": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Gas Purged",
+            "heading": "Sunlight-Readable LCD",
             "icon": "check_mark",
             "row_content": "<p>Designed with a fully sealed, gas-purged optical system to help prevent internal fogging and moisture intrusion.</p>",
             "page": ""
@@ -170,7 +170,7 @@
         "collapsible_row_Da4NPL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Tripod Adaptable",
+            "heading": "Compact & Lightweight",
             "icon": "check_mark",
             "row_content": "<p>Compatible with tripod adapters for hands-free viewing during long observation periods. Ideal for birdwatching, wildlife observation, nature study, coastal viewing, and other outdoor activities where stability enhances the experience.</p>",
             "page": ""
@@ -179,7 +179,7 @@
         "collapsible_row_wF9iJ9": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Long Eye Relief",
+            "heading": "Rechargeable Battery",
             "icon": "check_mark",
             "row_content": "<p>Designed with 14.7mm eye relief to provide a comfortable viewing experience for both eyeglass wearers and non-eyeglass users. Enjoy a full field of view without eye strain during extended observation sessions.</p>",
             "page": ""
