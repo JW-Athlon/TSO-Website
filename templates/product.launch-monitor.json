@@ -100,33 +100,58 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 20,
-        "padding_bottom": 12
+        "padding_bottom": 48
       }
     },
-    "collage_JyAMnR": {
-      "type": "collage",
+    "1793723567197cb038": {
+      "type": "_blocks",
       "blocks": {
-        "image_WxMNa4": {
-          "type": "image",
+        "ai_gen_block_60a819c_3eQ4Dd": {
+          "type": "ai_gen_block_60a819c",
           "settings": {
-            "image": "shopify://shop_images/Marlin-HD-Specs-s.jpg"
-          }
+            "heading": "Product Specifications",
+            "intro": "",
+            "desktop_width_percent": 90,
+            "column_one_heading": "Specification",
+            "column_two_heading": "TSO-LM1",
+            "row_1_left": "Product Name",
+            "row_1_right": "Doppler Radar Golf Swing Monitor",
+            "row_2_left": "Part Number",
+            "row_2_right": "TSO-LM1",
+            "row_3_left": "SKU",
+            "row_3_right": "T401001",
+            "row_4_left": "Radar Technology",
+            "row_4_right": "Doppler Radar",
+            "row_5_left": "Max. Speed",
+            "row_5_right": "Up to 199 mph",
+            "row_6_left": "Display Type",
+            "row_6_right": "Sunlight-Readable LCD",
+            "row_7_left": "Resolution",
+            "row_7_right": "400 × 300",
+            "row_8_left": "Display Area",
+            "row_8_right": "3.34 × 2.50 in",
+            "row_9_left": "Backlight",
+            "row_9_right": "None",
+            "row_10_left": "Battery",
+            "row_10_right": "Rechargeable Battery",
+            "row_11_left": "Shot History",
+            "row_11_right": "Stores Up to 500 Shots",
+            "row_12_left": "Operating Temperature",
+            "row_12_right": "-4°F to 158°F",
+            "row_13_left": "Storage Temperature",
+            "row_13_right": "-22°F to 176°F",
+            "row_14_left": "Dimensions",
+            "row_14_right": "5.31 × 3.35 × 0.94 in",
+            "row_15_left": "Weight",
+            "row_15_right": "5.6 oz"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "image_WxMNa4"
+        "ai_gen_block_60a819c_3eQ4Dd"
       ],
-      "name": "t:sections.collage.presets.name",
-      "settings": {
-        "heading": "Specifications",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
+      "settings": {}
     },
     "collapsible_content_LeDW4y": {
       "type": "collapsible-content",
@@ -449,7 +474,7 @@
   "order": [
     "related-products",
     "main",
-    "collage_JyAMnR",
+    "1793723567197cb038",
     "collapsible_content_LeDW4y",
     "multicolumn_Ene7rm",
     "multicolumn_TyqFj4",
