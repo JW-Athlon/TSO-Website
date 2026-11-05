@@ -11,7 +11,7 @@
   "sections": {
     "related-products": {
       "type": "related-products",
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -103,113 +103,6 @@
         "padding_bottom": 12
       }
     },
-    "collage_JyAMnR": {
-      "type": "collage",
-      "blocks": {
-        "image_WxMNa4": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Polar-HD-Specs-s.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_WxMNa4"
-      ],
-      "name": "t:sections.collage.presets.name",
-      "settings": {
-        "heading": "Specifications",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "collapsible_content_LeDW4y": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_3jKhn6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "HD Glass",
-            "icon": "check_mark",
-            "row_content": "<p>Experience bright, sharp images with premium HD glass and a Porro prism optical system designed for exceptional light transmission and clarity. These 10x50 binoculars for adults deliver outstanding performance for bird watching, wildlife viewing, and outdoor observation.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WkAmNz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Multi-Coated Optics",
-            "icon": "check_mark",
-            "row_content": "<p>Enjoy the brightness, depth perception, and image quality typically found in more expensive binoculars. The Polar HD offers high-end optical performance at an exceptional value for birders, hunters, and outdoor enthusiasts.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_qw8hmt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Rubber Armor",
-            "icon": "check_mark",
-            "row_content": "<p>Built to withstand wet environments and unexpected exposure to water, the rugged rubber-armored housing delivers reliable performance for birdwatching, hunting, hiking, and wildlife observation in changing weather conditions.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_DXDUHF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Gas Purged",
-            "icon": "check_mark",
-            "row_content": "<p>Nitrogen-purged and rainproof construction helps protect internal optics from moisture, while the rugged rubber armor provides a secure grip and reliable durability in the field.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Da4NPL": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tripod Adaptable",
-            "icon": "check_mark",
-            "row_content": "<p>Ideal for bird watching, wildlife viewing, hunting, hiking, travel, and sporting events. Tripod adaptable for enhanced stability and designed to deliver dependable performance wherever your adventure takes you.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wF9iJ9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Long Eye Relief",
-            "icon": "check_mark",
-            "row_content": "<p>Featuring long eye relief, adjustable eyecups, and smooth center focus, these bird watching binoculars provide comfortable viewing for both eyeglass and non-eyeglass wearers during extended observation sessions.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_3jKhn6",
-        "collapsible_row_WkAmNz",
-        "collapsible_row_qw8hmt",
-        "collapsible_row_DXDUHF",
-        "collapsible_row_Da4NPL",
-        "collapsible_row_wF9iJ9"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "Features",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-8b6db236-ea16-40f3-81c2-11a8834a5a86",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_rXPtHf": {
       "type": "multicolumn",
       "blocks": {
@@ -284,19 +177,19 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Features?",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 24,
         "padding_bottom": 24
       }
     },
@@ -401,15 +294,277 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "specs_table": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_60a819c_spec": {
+          "type": "ai_gen_block_60a819c",
+          "settings": {
+            "heading": "Product Specifications",
+            "intro": "",
+            "desktop_width_percent": 90,
+            "column_one_heading": "Specification",
+            "column_two_heading": "Polar HD",
+            "row_1_left": "Model",
+            "row_1_right": "TSO Polar HD",
+            "row_2_left": "Magnification",
+            "row_2_right": "10X",
+            "row_3_left": "Objective Lens Diameter",
+            "row_3_right": "50 mm",
+            "row_4_left": "Prism Type",
+            "row_4_right": "Porro prism",
+            "row_5_left": "Field of View (Angular)",
+            "row_5_right": "6.8°",
+            "row_6_left": "Field of View @ 1000 yd",
+            "row_6_right": "360 ft",
+            "row_7_left": "Close Focus",
+            "row_7_right": "26.2 ft",
+            "row_8_left": "Interpupillary Distance",
+            "row_8_right": "56–72 mm",
+            "row_9_left": "Eye Relief",
+            "row_9_right": "12 mm",
+            "row_10_left": "Dimensions (H × W)",
+            "row_10_right": "6.65 × 7.7 in",
+            "row_11_left": "Weight",
+            "row_11_right": "29 oz",
+            "row_12_left": "Waterproofing",
+            "row_12_right": "Rainproof, nitrogen purged",
+            "row_13_left": "",
+            "row_13_right": "",
+            "row_14_left": "",
+            "row_14_right": "",
+            "row_15_left": "",
+            "row_15_right": "",
+            "padding_vertical": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_60a819c_spec"
+      ],
+      "settings": {}
+    },
+    "faq_bino": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq_row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does 10x50 mean?",
+            "icon": "none",
+            "row_content": "<p>The first number is magnification: 10X makes distant objects appear 10 times closer. The second is the objective lens diameter, 50 mm. Larger lenses let in more light.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the Polar HD binoculars waterproof?",
+            "icon": "none",
+            "row_content": "<p>The Polar HD is rainproof rather than fully waterproof. Its nitrogen-purged construction protects the internal optics from moisture, so it is built for rain, mist and humid conditions. We don't recommend submerging it.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the field of view?",
+            "icon": "none",
+            "row_content": "<p>The field of view is 6.8°, which is 360 ft wide at 1000 yards. A wider field of view makes it easier to find and follow your subject.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How close can I focus?",
+            "icon": "none",
+            "row_content": "<p>The close focus distance is 26.2 ft.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the eye relief?",
+            "icon": "none",
+            "row_content": "<p>The eye relief is 12 mm. Eye relief is how far your eye can sit from the eyepiece and still see the full image; more is generally more comfortable, especially for people who wear glasses.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will they fit my eyes?",
+            "icon": "none",
+            "row_content": "<p>The interpupillary distance (the spacing between the two barrels) adjusts from 56–72 mm, which suits most adults.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How big and heavy are they?",
+            "icon": "none",
+            "row_content": "<p>They measure 6.65 × 7.7 in (height × width) and weigh 29 oz. The 50mm objective lenses gather more light than the smaller models in the line.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are they best for?",
+            "icon": "none",
+            "row_content": "<p>The Polar HD is a good fit for bird watching, wildlife viewing, hunting, hiking and sporting events.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use them on a tripod?",
+            "icon": "none",
+            "row_content": "<p>Yes. They are tripod adaptable, using a standard tripod adapter (sold separately), for steady, hands-free viewing during long observation sessions.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your warranty and return policy?",
+            "icon": "none",
+            "row_content": "<p>[Warranty and returns details to be added.]</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_row_1",
+        "faq_row_2",
+        "faq_row_3",
+        "faq_row_4",
+        "faq_row_5",
+        "faq_row_6",
+        "faq_row_7",
+        "faq_row_8",
+        "faq_row_9",
+        "faq_row_10"
+      ],
+      "settings": {
+        "caption": "Questions",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "shipping_bino": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Delivery",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping & returns",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Shipping times, free-shipping threshold and returns terms to be added.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "reviews_bino": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Reviews",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "What customers are saying",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Add real customer reviews here.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "css_gallery": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}\n@media screen and (min-width:990px){.product-media-container.constrain-height{--constrained-height:450px!important}}\n@media screen and (max-width:989px){.product-media-container.constrain-height{--viewport-offset:520px!important;--constrained-min-height:320px!important}}\n.product-media-container .media img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\n.thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\nslideshow-component{display:flex!important;flex-direction:column}\nslideshow-component.page-width{padding-top:24px!important;padding-bottom:24px!important}\nslideshow-component .slideshow{order:1}\nslideshow-component .slideshow__controls--top{order:2}\n@media screen and (min-width:750px){slideshow-component.page-width{width:75%;max-width:1050px}}\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "related-products",
     "main",
-    "collage_JyAMnR",
-    "collapsible_content_LeDW4y",
-    "multicolumn_rXPtHf",
+    "slideshow_B4yXRc",
     "multicolumn_TyqFj4",
-    "slideshow_B4yXRc"
+    "multicolumn_rXPtHf",
+    "specs_table",
+    "faq_bino",
+    "shipping_bino",
+    "reviews_bino",
+    "related-products",
+    "css_gallery"
   ]
 }

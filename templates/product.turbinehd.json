@@ -86,7 +86,7 @@
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -99,113 +99,6 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collage_H7aVLh": {
-      "type": "collage",
-      "blocks": {
-        "image_cXpTdE": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Turbine-HD-Specs-s.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_cXpTdE"
-      ],
-      "name": "t:sections.collage.presets.name",
-      "settings": {
-        "heading": "Specifications",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "collapsible_content_LeDW4y": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_3jKhn6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "HD Glass",
-            "icon": "check_mark",
-            "row_content": "<p>Built for outdoor enthusiasts who value simplicity and performance, these binoculars are easy to use while delivering the optical quality needed for birding, wildlife observation, sightseeing, and everyday adventures.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WkAmNz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Multi-Coated Optics",
-            "icon": "check_mark",
-            "row_content": "<p>Cross more off your life list by capturing unexpected details wherever your adventures take you. HD glass and multi-coated optics deliver bright, clear images with enhanced contrast and color fidelity, helping you spot birds, wildlife, and distant subjects with impressive clarity.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_qw8hmt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Rubber Armor",
-            "icon": "check_mark",
-            "row_content": "<p>The rainproof construction helps you stay focused on the view, even in light rain, mist, or humid environments. Combined with a lightweight roof prism design, these binoculars are easy to carry on birding trips, hunting outings, hiking trails, travel adventures, and wildlife exploration.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_DXDUHF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Gas Purged",
-            "icon": "check_mark",
-            "row_content": "<p>Designed with a fully sealed, gas-purged optical system to help prevent internal fogging and moisture intrusion.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Da4NPL": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Tripod Adaptable",
-            "icon": "check_mark",
-            "row_content": "<p>Compatible with tripod adapters for hands-free viewing during long observation periods. Ideal for birdwatching, wildlife observation, nature study, coastal viewing, and other outdoor activities where stability enhances the experience.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wF9iJ9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Long Eye Relief",
-            "icon": "check_mark",
-            "row_content": "<p>Featuring 15.5mm eye relief for a more comfortable viewing experience during extended observation sessions. Ideal for both eyeglass wearers and non-eyeglass users, helping you stay focused on the view instead of adjusting your optics.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_3jKhn6",
-        "collapsible_row_WkAmNz",
-        "collapsible_row_qw8hmt",
-        "collapsible_row_DXDUHF",
-        "collapsible_row_Da4NPL",
-        "collapsible_row_wF9iJ9"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "Features",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-8b6db236-ea16-40f3-81c2-11a8834a5a86",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -284,19 +177,19 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Features?",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "square",
         "button_label": "",
         "button_link": "",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
         "color_scheme": "",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 24,
         "padding_bottom": 24
       }
     },
@@ -401,15 +294,277 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "specs_table": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_60a819c_spec": {
+          "type": "ai_gen_block_60a819c",
+          "settings": {
+            "heading": "Product Specifications",
+            "intro": "",
+            "desktop_width_percent": 90,
+            "column_one_heading": "Specification",
+            "column_two_heading": "Turbine HD",
+            "row_1_left": "Model",
+            "row_1_right": "TSO Turbine HD",
+            "row_2_left": "Magnification",
+            "row_2_right": "10X",
+            "row_3_left": "Objective Lens Diameter",
+            "row_3_right": "42 mm",
+            "row_4_left": "Prism Type",
+            "row_4_right": "Roof prism",
+            "row_5_left": "Field of View (Angular)",
+            "row_5_right": "5.6°",
+            "row_6_left": "Field of View @ 1000 yd",
+            "row_6_right": "294 ft",
+            "row_7_left": "Close Focus",
+            "row_7_right": "26 ft",
+            "row_8_left": "Interpupillary Distance",
+            "row_8_right": "57–72 mm",
+            "row_9_left": "Eye Relief",
+            "row_9_right": "15.5 mm",
+            "row_10_left": "Dimensions (H × W)",
+            "row_10_right": "5.9 × 5.15 in",
+            "row_11_left": "Weight",
+            "row_11_right": "18.8 oz",
+            "row_12_left": "Waterproofing",
+            "row_12_right": "Rainproof, nitrogen purged",
+            "row_13_left": "",
+            "row_13_right": "",
+            "row_14_left": "",
+            "row_14_right": "",
+            "row_15_left": "",
+            "row_15_right": "",
+            "padding_vertical": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_60a819c_spec"
+      ],
+      "settings": {}
+    },
+    "faq_bino": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq_row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does 10x42 mean?",
+            "icon": "none",
+            "row_content": "<p>The first number is magnification: 10X makes distant objects appear 10 times closer. The second is the objective lens diameter, 42 mm. Larger lenses let in more light.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are the Turbine HD binoculars waterproof?",
+            "icon": "none",
+            "row_content": "<p>The Turbine HD is rainproof rather than fully waterproof. Its nitrogen-purged construction protects the internal optics from moisture, so it is built for rain, mist and humid conditions. We don't recommend submerging it.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the field of view?",
+            "icon": "none",
+            "row_content": "<p>The field of view is 5.6°, which is 294 ft wide at 1000 yards. A wider field of view makes it easier to find and follow your subject.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How close can I focus?",
+            "icon": "none",
+            "row_content": "<p>The close focus distance is 26 ft.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the eye relief?",
+            "icon": "none",
+            "row_content": "<p>The eye relief is 15.5 mm. Eye relief is how far your eye can sit from the eyepiece and still see the full image; more is generally more comfortable, especially for people who wear glasses.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will they fit my eyes?",
+            "icon": "none",
+            "row_content": "<p>The interpupillary distance (the spacing between the two barrels) adjusts from 57–72 mm, which suits most adults.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How big and heavy are they?",
+            "icon": "none",
+            "row_content": "<p>They measure 5.9 × 5.15 in (height × width) and weigh 18.8 oz. Its lightweight roof prism design makes it easy to carry.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are they best for?",
+            "icon": "none",
+            "row_content": "<p>The Turbine HD is a good fit for birding, wildlife observation, sightseeing and hiking.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use them on a tripod?",
+            "icon": "none",
+            "row_content": "<p>Yes. They are tripod adaptable, using a standard tripod adapter (sold separately), for steady, hands-free viewing during long observation sessions.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_10": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your warranty and return policy?",
+            "icon": "none",
+            "row_content": "<p>[Warranty and returns details to be added.]</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_row_1",
+        "faq_row_2",
+        "faq_row_3",
+        "faq_row_4",
+        "faq_row_5",
+        "faq_row_6",
+        "faq_row_7",
+        "faq_row_8",
+        "faq_row_9",
+        "faq_row_10"
+      ],
+      "settings": {
+        "caption": "Questions",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "shipping_bino": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Delivery",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping & returns",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Shipping times, free-shipping threshold and returns terms to be added.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "reviews_bino": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Reviews",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "What customers are saying",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Add real customer reviews here.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "css_gallery": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}\n@media screen and (min-width:990px){.product-media-container.constrain-height{--constrained-height:450px!important}}\n@media screen and (max-width:989px){.product-media-container.constrain-height{--viewport-offset:520px!important;--constrained-min-height:320px!important}}\n.product-media-container .media img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\n.thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\nslideshow-component{display:flex!important;flex-direction:column}\nslideshow-component.page-width{padding-top:24px!important;padding-bottom:24px!important}\nslideshow-component .slideshow{order:1}\nslideshow-component .slideshow__controls--top{order:2}\n@media screen and (min-width:750px){slideshow-component.page-width{width:75%;max-width:1050px}}\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "collage_H7aVLh",
-    "collapsible_content_LeDW4y",
-    "multicolumn_ECepVq",
+    "slideshow_7PQNji",
     "multicolumn_jyVJQn",
-    "slideshow_7PQNji"
+    "multicolumn_ECepVq",
+    "specs_table",
+    "faq_bino",
+    "shipping_bino",
+    "reviews_bino",
+    "related-products",
+    "css_gallery"
   ]
 }
