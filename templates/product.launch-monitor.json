@@ -387,6 +387,7 @@
       "blocks": {
         "slide_gFErKh": {
           "type": "slide",
+          "name": "Slide1",
           "settings": {
             "image": "shopify://shop_images/Asset_8_4x_1.png",
             "image_overlay_opacity": 0,
@@ -405,6 +406,7 @@
         },
         "slide_AKyPYt": {
           "type": "slide",
+          "name": "Slide2",
           "settings": {
             "image": "shopify://shop_images/Asset_10_4x_1.png",
             "image_overlay_opacity": 0,
