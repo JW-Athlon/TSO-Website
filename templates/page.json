@@ -72,7 +72,7 @@
       "settings": {
         "image": "shopify://shop_images/dustin_tso.png",
         "image_overlay_opacity": 20,
-        "image_height": "medium",
+        "image_height": "large",
         "image_behavior": "none",
         "desktop_content_position": "bottom-left",
         "desktop_content_alignment": "left",
