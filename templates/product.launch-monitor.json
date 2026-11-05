@@ -11,7 +11,7 @@
   "sections": {
     "related-products": {
       "type": "related-products",
-      "disabled": true,
+      "disabled": false,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -143,7 +143,8 @@
             "row_14_left": "Dimensions",
             "row_14_right": "5.31 × 3.35 × 0.94 in",
             "row_15_left": "Weight",
-            "row_15_right": "5.6 oz"
+            "row_15_right": "5.6 oz",
+            "padding_vertical": 24
           },
           "blocks": {}
         }
@@ -152,88 +153,6 @@
         "ai_gen_block_60a819c_3eQ4Dd"
       ],
       "settings": {}
-    },
-    "collapsible_content_LeDW4y": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_3jKhn6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Doppler Radar",
-            "icon": "check_mark",
-            "row_content": "<p>The TSO LM1 uses Doppler radar technology to provide fast, convenient speed measurement during your practice sessions.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_WkAmNz": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Reads up to 199 MPH",
-            "icon": "check_mark",
-            "row_content": "<p>Using Doppler radar technology, the TSO-LM1 measures speeds up to <strong>199 mph</strong>, giving golfers quick feedback during practice.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_qw8hmt": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Stores up to 500 Shots",
-            "icon": "check_mark",
-            "row_content": "<p>The TSO-LM1 can store up to 500 shots, allowing you to review previous results and better understand your performance throughout a practice session.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_DXDUHF": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Sunlight-Readable LCD",
-            "icon": "check_mark",
-            "row_content": "<p>The TSO-LM1 features a&nbsp;400 × 300 sunlight-readable LCD that uses available ambient light to remain clear and easy to read in bright outdoor conditions.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Da4NPL": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Compact & Lightweight",
-            "icon": "check_mark",
-            "row_content": "<p>The TSO LM1's compact&nbsp;5.31 × 3.35 × 0.94 in body and 5.6 oz weight makes it easy to carry, set up, and use whenever without adding unnecessary weight.</p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_wF9iJ9": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Rechargeable Battery",
-            "icon": "check_mark",
-            "row_content": "<p>A built-in rechargeable battery eliminates the need to constantly replace disposable batteries. Charge it, pack it in your golf bag, and you're ready for your next practice session.</p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_3jKhn6",
-        "collapsible_row_WkAmNz",
-        "collapsible_row_qw8hmt",
-        "collapsible_row_DXDUHF",
-        "collapsible_row_Da4NPL",
-        "collapsible_row_wF9iJ9"
-      ],
-      "name": "t:sections.collapsible_content.presets.name",
-      "settings": {
-        "caption": "",
-        "heading": "Features",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-8b6db236-ea16-40f3-81c2-11a8834a5a86",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
     },
     "multicolumn_Ene7rm": {
       "type": "multicolumn",
@@ -321,7 +240,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 0,
+        "padding_top": 24,
         "padding_bottom": 24
       }
     },
@@ -422,11 +341,68 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_specs": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_10_4x_1.png",
+            "image_overlay_opacity": 40,
+            "heading": "199 mph. 5.6 oz. 500 shots.",
+            "heading_size": "h1",
+            "subheading": "Doppler radar speed readings in a pocket-size monitor.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide_steps": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_8_4x_1.png",
+            "image_overlay_opacity": 40,
+            "heading": "Place. Swing. Read.",
+            "heading_size": "h1",
+            "subheading": "Set it down, take your swing, and see your speed on the display.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
+        },
+        "slide_sun": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Asset_10_4x_1.png",
+            "image_overlay_opacity": 40,
+            "heading": "Readable in direct sun",
+            "heading_size": "h1",
+            "subheading": "A sunlight-readable LCD that uses ambient light, no backlight needed.",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-2"
+          }
         }
       },
       "block_order": [
         "slide_gFErKh",
-        "slide_AKyPYt"
+        "slide_AKyPYt",
+        "slide_specs",
+        "slide_steps",
+        "slide_sun"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
@@ -439,15 +415,206 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "faq_lm1": {
+      "type": "collapsible-content",
+      "blocks": {
+        "faq_row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does the LM1 measure?",
+            "icon": "none",
+            "row_content": "<p>The LM1 uses Doppler radar to measure speed, up to 199 mph, and shows the result on its built-in display so you get feedback right after each swing.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I read the screen in bright sunlight?",
+            "icon": "none",
+            "row_content": "<p>Yes. The 400 × 300 LCD uses available ambient light rather than a backlight, so it stays clear and easy to read outdoors.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many shots can it store?",
+            "icon": "none",
+            "row_content": "<p>The LM1 stores up to 500 shots, so you can review previous results and better understand your performance throughout a practice session.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is it powered?",
+            "icon": "none",
+            "row_content": "<p>It has a built-in rechargeable battery. Charge it, drop it in your golf bag and you're ready for your next session.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will it work in hot or cold weather?",
+            "icon": "none",
+            "row_content": "<p>The LM1 operates from -4°F to 158°F and can be stored from -22°F to 176°F.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How big is it?",
+            "icon": "none",
+            "row_content": "<p>It measures 5.31 × 3.35 × 0.94 in and weighs 5.6 oz, compact enough to carry, set up and use whenever you're ready to practice, without adding unnecessary weight to your bag.</p>",
+            "page": ""
+          }
+        },
+        "faq_row_7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your warranty and return policy?",
+            "icon": "none",
+            "row_content": "<p>[Warranty and returns details to be added.]</p>",
+            "page": ""
+          }
+        },
+        "faq_row_radar": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Doppler radar and why does the LM1 use it?",
+            "icon": "none",
+            "row_content": "<p>Doppler radar measures speed by tracking how a moving object changes the signal it reflects. The LM1 uses it to give you fast, convenient speed readings, up to 199 mph, during your practice sessions.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_row_radar",
+        "faq_row_1",
+        "faq_row_2",
+        "faq_row_3",
+        "faq_row_4",
+        "faq_row_5",
+        "faq_row_6",
+        "faq_row_7"
+      ],
+      "settings": {
+        "caption": "Questions",
+        "heading": "Frequently asked questions",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_first",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "shipping_lm1": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Delivery",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping & returns",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Shipping times, free-shipping threshold and returns terms to be added.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "reviews_lm1": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "c": {
+          "type": "caption",
+          "settings": {
+            "text": "Reviews",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "h": {
+          "type": "heading",
+          "settings": {
+            "heading": "What golfers are saying",
+            "heading_size": "h2"
+          }
+        },
+        "t": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[Add real customer reviews here.]</p>"
+          }
+        }
+      },
+      "block_order": [
+        "c",
+        "h",
+        "t"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "css_lm1_gallery": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}\n@media screen and (min-width:990px){.product-media-container.constrain-height{--constrained-height:450px!important}}\n@media screen and (max-width:989px){.product-media-container.constrain-height{--viewport-offset:520px!important;--constrained-min-height:320px!important}}\n.product-media-container .media img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\n.thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
-    "related-products",
     "main",
-    "1793723567197cb038",
-    "collapsible_content_LeDW4y",
-    "multicolumn_Ene7rm",
+    "slideshow_AdBFX4",
     "multicolumn_TyqFj4",
-    "slideshow_AdBFX4"
+    "multicolumn_Ene7rm",
+    "1793723567197cb038",
+    "faq_lm1",
+    "shipping_lm1",
+    "reviews_lm1",
+    "related-products",
+    "css_lm1_gallery"
   ]
 }

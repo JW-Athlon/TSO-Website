@@ -30,6 +30,8 @@
     margin-right: auto;
     color: #020912;
     font-family: inherit;
+    padding-top: {{ block.settings.padding_vertical }}px;
+    padding-bottom: {{ block.settings.padding_vertical }}px;
   }
   .ai-text-table-{{ ai_gen_id }}__heading {
     color: #3a5eab;
@@ -92,6 +94,7 @@
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Product specifications" },
     { "type": "richtext", "id": "intro", "label": "Intro text", "default": "<p>Technical details for the TSO-LM1 Doppler Radar Golf Swing Monitor.</p>" },
+    { "type": "range", "id": "padding_vertical", "label": "Top and bottom padding", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 0 },
     { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
     { "type": "header", "content": "Table columns" },
     { "type": "text", "id": "column_one_heading", "label": "First column heading", "default": "Specification" },
