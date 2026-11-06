@@ -84,25 +84,6 @@
         "padding_bottom": 12
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "disabled": false,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_ECepVq": {
       "type": "multicolumn",
       "blocks": {
@@ -307,33 +288,33 @@
             "column_one_heading": "Specification",
             "column_two_heading": "Turbine HD",
             "row_1_left": "Model",
-            "row_1_right": "TSO Turbine HD",
+            "row_1_right": "TSO Turbine HD (T112001)",
             "row_2_left": "Magnification",
             "row_2_right": "10X",
             "row_3_left": "Objective Lens Diameter",
             "row_3_right": "42 mm",
             "row_4_left": "Prism Type",
             "row_4_right": "Roof prism",
-            "row_5_left": "Field of View (Angular)",
-            "row_5_right": "5.6°",
-            "row_6_left": "Field of View @ 1000 yd",
-            "row_6_right": "294 ft",
-            "row_7_left": "Close Focus",
-            "row_7_right": "26 ft",
-            "row_8_left": "Interpupillary Distance",
-            "row_8_right": "57–72 mm",
-            "row_9_left": "Eye Relief",
-            "row_9_right": "15.5 mm",
-            "row_10_left": "Dimensions (H × W)",
-            "row_10_right": "5.9 × 5.15 in",
-            "row_11_left": "Weight",
-            "row_11_right": "18.8 oz",
-            "row_12_left": "Waterproofing",
-            "row_12_right": "Rainproof, nitrogen purged",
-            "row_13_left": "",
-            "row_13_right": "",
-            "row_14_left": "",
-            "row_14_right": "",
+            "row_5_left": "Exit Pupil",
+            "row_5_right": "4.2 mm",
+            "row_6_left": "Focus Type",
+            "row_6_right": "Center focus",
+            "row_7_left": "Field of View (Angular)",
+            "row_7_right": "5.6°",
+            "row_8_left": "Field of View @ 1000 yd",
+            "row_8_right": "294 ft",
+            "row_9_left": "Close Focus",
+            "row_9_right": "26 ft",
+            "row_10_left": "Interpupillary Distance",
+            "row_10_right": "57–72 mm",
+            "row_11_left": "Eye Relief",
+            "row_11_right": "15.5 mm",
+            "row_12_left": "Dimensions (H × W)",
+            "row_12_right": "5.9 × 5.15 in",
+            "row_13_left": "Weight",
+            "row_13_right": "18.8 oz",
+            "row_14_left": "Waterproofing",
+            "row_14_right": "Rainproof, nitrogen purged",
             "row_15_left": "",
             "row_15_right": "",
             "padding_vertical": 24
@@ -435,7 +416,7 @@
           "settings": {
             "heading": "What is your warranty and return policy?",
             "icon": "none",
-            "row_content": "<p>[Warranty and returns details to be added.]</p>",
+            "row_content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
             "page": ""
           }
         }
@@ -564,7 +545,6 @@
     "faq_bino",
     "shipping_bino",
     "reviews_bino",
-    "related-products",
     "css_gallery"
   ]
 }

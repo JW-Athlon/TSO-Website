@@ -319,6 +319,15 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+  {%- if template.name == 'product' -%}
+    <style>
+      .product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}
+      @media screen and (min-width:990px){.product-media-container.constrain-height{--constrained-height:450px!important}}
+      @media screen and (max-width:989px){.product-media-container.constrain-height{--viewport-offset:520px!important;--constrained-min-height:320px!important}}
+      .product-media-container .media img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}
+      .thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}
+    </style>
+  {%- endif -%}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

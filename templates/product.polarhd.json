@@ -9,25 +9,6 @@
  */
 {
   "sections": {
-    "related-products": {
-      "type": "related-products",
-      "disabled": false,
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -307,35 +288,35 @@
             "column_one_heading": "Specification",
             "column_two_heading": "Polar HD",
             "row_1_left": "Model",
-            "row_1_right": "TSO Polar HD",
+            "row_1_right": "TSO Polar HD (T113001)",
             "row_2_left": "Magnification",
             "row_2_right": "10X",
             "row_3_left": "Objective Lens Diameter",
             "row_3_right": "50 mm",
             "row_4_left": "Prism Type",
             "row_4_right": "Porro prism",
-            "row_5_left": "Field of View (Angular)",
-            "row_5_right": "6.8°",
-            "row_6_left": "Field of View @ 1000 yd",
-            "row_6_right": "360 ft",
-            "row_7_left": "Close Focus",
-            "row_7_right": "26.2 ft",
-            "row_8_left": "Interpupillary Distance",
-            "row_8_right": "56–72 mm",
-            "row_9_left": "Eye Relief",
-            "row_9_right": "12 mm",
-            "row_10_left": "Dimensions (H × W)",
-            "row_10_right": "6.65 × 7.7 in",
-            "row_11_left": "Weight",
-            "row_11_right": "29 oz",
-            "row_12_left": "Waterproofing",
-            "row_12_right": "Rainproof, nitrogen purged",
-            "row_13_left": "",
-            "row_13_right": "",
-            "row_14_left": "",
-            "row_14_right": "",
-            "row_15_left": "",
-            "row_15_right": "",
+            "row_5_left": "Coating",
+            "row_5_right": "Anti-reflective",
+            "row_6_left": "Exit Pupil",
+            "row_6_right": "5 mm",
+            "row_7_left": "Diopter Adjustment",
+            "row_7_right": "±3",
+            "row_8_left": "Field of View (Angular)",
+            "row_8_right": "6.8°",
+            "row_9_left": "Field of View @ 1000 yd",
+            "row_9_right": "360 ft",
+            "row_10_left": "Close Focus",
+            "row_10_right": "26.2 ft",
+            "row_11_left": "Interpupillary Distance",
+            "row_11_right": "56–72 mm",
+            "row_12_left": "Eye Relief",
+            "row_12_right": "12 mm",
+            "row_13_left": "Dimensions (H × W)",
+            "row_13_right": "6.65 × 7.7 in",
+            "row_14_left": "Weight",
+            "row_14_right": "29 oz",
+            "row_15_left": "Waterproofing",
+            "row_15_right": "Rainproof, nitrogen purged",
             "padding_vertical": 24
           },
           "blocks": {}
@@ -435,7 +416,7 @@
           "settings": {
             "heading": "What is your warranty and return policy?",
             "icon": "none",
-            "row_content": "<p>[Warranty and returns details to be added.]</p>",
+            "row_content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
             "page": ""
           }
         }
@@ -564,7 +545,6 @@
     "faq_bino",
     "shipping_bino",
     "reviews_bino",
-    "related-products",
     "css_gallery"
   ]
 }
