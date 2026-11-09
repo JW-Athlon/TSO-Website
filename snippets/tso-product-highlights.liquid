@@ -1,0 +1,40 @@
+{%- comment -%}
+  Product-page extras for TSO binoculars.
+  part: 'subtitle' (use line) | 'stats' (3 stat boxes: magnification, objective, weight)
+{%- endcomment -%}
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign use = ''
+  assign mag = '10×'
+  assign obj = ''
+  assign wt = ''
+  case product.handle
+    when 'tso-coral-10x25-compact-binoculars'
+      assign use = 'Compact travel and sporting-event viewing'
+      assign obj = '25 mm'
+      assign wt = '9.5 oz'
+    when 'marlin-hd-10x42-bird-watching-binoculars'
+      assign use = 'Versatile full-size viewing for wildlife and outdoor use'
+      assign obj = '42 mm'
+      assign wt = '23.8 oz'
+    when 'tso-polar-hd-10x50-binoculars'
+      assign use = 'Large-objective outdoor viewing and wildlife observation'
+      assign obj = '50 mm'
+      assign wt = '29 oz'
+    when 'turbine-hd-10x42-roof-prism-binoculars'
+      assign use = 'Lightweight roof-prism viewing for birding and hiking'
+      assign obj = '42 mm'
+      assign wt = '18.8 oz'
+  endcase
+-%}
+{%- if use != blank -%}
+  {%- if part == 'subtitle' -%}
+    <p class="tso-product-subtitle">{{ use }}</p>
+  {%- elsif part == 'stats' -%}
+    <div class="tso-stats">
+      <div><strong>{{ mag }}</strong><small>Magnification</small></div>
+      <div><strong>{{ obj }}</strong><small>Objective lens</small></div>
+      <div><strong>{{ wt }}</strong><small>Weight</small></div>
+    </div>
+  {%- endif -%}
+{%- endif -%}

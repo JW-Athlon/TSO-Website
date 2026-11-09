@@ -1,0 +1,49 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+
+<div class="tso tso-features">
+  <div class="page-width tso-features__inner">
+    <div class="tso-head">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        {%- if section.settings.heading != blank -%}<h2 class="tso-display">{{ section.settings.heading }}</h2>{%- endif -%}
+      </div>
+    </div>
+    <div class="tso-features__grid">
+      {%- for block in section.blocks -%}
+        <article class="tso-feature" {{ block.shopify_attributes }}>
+          <div class="tso-feature__icon" aria-hidden="true">{{ block.settings.icon }}</div>
+          <h3>{{ block.settings.heading }}</h3>
+          <p>{{ block.settings.text }}</p>
+          {%- if block.settings.link_label != blank -%}
+            <a class="tso-text-link" {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %}>{{ block.settings.link_label }} <span aria-hidden="true">↗</span></a>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO feature cards",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Need a starting point?" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Choose by what matters to you." }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon character", "default": "◎" },
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "textarea", "id": "text", "label": "Text" },
+        { "type": "text", "id": "link_label", "label": "Link label" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "TSO feature cards", "blocks": [{ "type": "card" }, { "type": "card" }, { "type": "card" }] }]
+}
+{% endschema %}

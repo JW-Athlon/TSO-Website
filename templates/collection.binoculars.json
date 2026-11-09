@@ -13,8 +13,9 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
+        "show_collection_image": true,
+        "color_scheme": "scheme-3",
+        "eyebrow": "The TSO optical collection"
       }
     },
     "product-grid": {
@@ -24,22 +25,73 @@
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 36
+      }
+    },
+    "tso_compare_table": {
+      "type": "tso-compare-table",
+      "settings": {}
+    },
+    "tso_feature_cards": {
+      "type": "tso-feature-cards",
+      "blocks": {
+        "c1": {
+          "type": "card",
+          "settings": {
+            "icon": "↗",
+            "heading": "Compact carry",
+            "text": "Coral HD is the most compact model in this lineup at 9.5 oz, with a 10×25 configuration for travel and sporting events.",
+            "link_label": "Explore Coral HD",
+            "link": "shopify://products/tso-coral-10x25-compact-binoculars"
+          }
+        },
+        "c2": {
+          "type": "card",
+          "settings": {
+            "icon": "◎",
+            "heading": "All-around 10×42",
+            "text": "Choose between Marlin HD's fully sealed roof-prism design and Turbine HD's lighter, rainproof roof-prism build.",
+            "link_label": "Compare 10×42 models",
+            "link": "shopify://products/marlin-hd-10x42-bird-watching-binoculars"
+          }
+        },
+        "c3": {
+          "type": "card",
+          "settings": {
+            "icon": "◉",
+            "heading": "Large 50 mm objective",
+            "text": "Polar HD pairs 10× magnification with a 50 mm objective lens and a 360 ft field of view at 1,000 yards.",
+            "link_label": "Explore Polar HD",
+            "link": "shopify://products/tso-polar-hd-10x50-binoculars"
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "eyebrow": "Need a starting point?",
+        "heading": "Choose by what matters to you."
       }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "tso_compare_table",
+    "tso_feature_cards"
   ]
 }
+ 

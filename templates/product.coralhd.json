@@ -14,10 +14,9 @@
       "blocks": {
         "vendor": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "body"
+            "text": "TSO HD binoculars",
+            "text_style": "uppercase"
           }
         },
         "title": {
@@ -56,16 +55,60 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "tso_subtitle": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'tso-product-highlights', product: product, part: 'subtitle' %}"
+          }
+        },
+        "tso_stats": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'tso-product-highlights', product: product, part: 'stats' %}"
+          }
+        },
+        "tab_overview": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product overview",
+            "icon": "none",
+            "content": "<p>A compact 10×25 Porro-prism binocular with anti-reflective coating, rubber armor, and rainproof nitrogen-purged construction.</p>",
+            "page": ""
+          }
+        },
+        "tab_features": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Features & construction",
+            "icon": "none",
+            "content": "<p>Rubber armor provides an external protective coating against bumps and drops. Nitrogen-purged construction provides internal moisture protection. The Coral HD is rainproof, not fully waterproof, and should not be submerged.</p>",
+            "page": ""
+          }
+        },
+        "tab_warranty": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Warranty & returns",
+            "icon": "none",
+            "content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "tso_subtitle",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
-        "description",
         "buy_buttons",
+        "tso_stats",
+        "tab_overview",
+        "tab_features",
+        "tab_warranty",
         "share"
       ],
       "settings": {
@@ -538,3 +581,4 @@
     "css_gallery"
   ]
 }
+ 
