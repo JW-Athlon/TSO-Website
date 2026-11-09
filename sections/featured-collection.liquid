@@ -73,11 +73,19 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      <div class="tso-lineup-head">
+      <div>
+      {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
+      </div>
+      {%- if section.settings.header_link_label != blank -%}
+        <a class="tso-text-link" href="{{ section.settings.header_link | default: section.settings.collection.url }}">{{ section.settings.header_link_label }} <span aria-hidden="true">↗</span></a>
+      {%- endif -%}
+      </div>
       {%- if section.settings.description != blank
         or section.settings.show_description
         and section.settings.collection.description != empty
@@ -123,6 +131,7 @@
                   image_shape: section.settings.image_shape,
                   lazy_load: lazy_load,
                   show_secondary_image: section.settings.show_secondary_image,
+                  tso_last_image: section.settings.use_last_image,
                   show_vendor: section.settings.show_vendor,
                   show_rating: section.settings.show_rating,
                   skip_styles: skip_card_product_styles,

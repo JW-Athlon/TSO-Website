@@ -61,29 +61,35 @@
           class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
           style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
         >
+          {%- liquid
+            assign tso_media = card_product.featured_media
+            if tso_last_image and card_product.media.size > 1
+              assign tso_media = card_product.media.last
+            endif
+          -%}
           {%- if card_product.featured_media -%}
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 <img
                   srcset="
-                    {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-                    {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
+                    {%- if tso_media.width >= 165 -%}{{ tso_media | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if tso_media.width >= 360 -%}{{ tso_media | image_url: width: 360 }} 360w,{%- endif -%}
+                    {%- if tso_media.width >= 533 -%}{{ tso_media | image_url: width: 533 }} 533w,{%- endif -%}
+                    {%- if tso_media.width >= 720 -%}{{ tso_media | image_url: width: 720 }} 720w,{%- endif -%}
+                    {%- if tso_media.width >= 940 -%}{{ tso_media | image_url: width: 940 }} 940w,{%- endif -%}
+                    {%- if tso_media.width >= 1066 -%}{{ tso_media | image_url: width: 1066 }} 1066w,{%- endif -%}
+                    {{ tso_media | image_url }} {{ tso_media.width }}w
                   "
-                  src="{{ card_product.featured_media | image_url: width: 533 }}"
+                  src="{{ tso_media | image_url: width: 533 }}"
                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                  alt="{{ card_product.featured_media.alt | escape }}"
+                  alt="{{ tso_media.alt | escape }}"
                   class="motion-reduce"
                   {% unless lazy_load == false %}
                     loading="lazy"
                   {% endunless %}
-                  width="{{ card_product.featured_media.width }}"
-                  height="{{ card_product.featured_media.height }}"
+                  width="{{ tso_media.width }}"
+                  height="{{ tso_media.height }}"
                 >
                 {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
 
@@ -211,7 +217,9 @@
               {%- endif -%}
 
               {% render 'tso-card-specs', product: card_product, part: 'details' %}
+              {%- if tso_title != blank -%}<div class="tso-foot">{%- endif -%}
               {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+              {%- if tso_title != blank -%}<a class="tso-explore" href="{{ card_product.url }}">Explore <span aria-hidden="true">↗</span></a></div>{%- endif -%}
               {%- if card_product.quantity_price_breaks_configured? -%}
                 {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                   {% liquid
