@@ -273,6 +273,73 @@
         "padding_bottom": 48
       }
     },
+    "tso_category_cards": {
+      "type": "tso-category-cards",
+      "blocks": {
+        "card_binos": {
+          "type": "card",
+          "settings": {
+            "layout": "photo",
+            "image": "shopify://shop_images/birdwatch.jpg",
+            "eyebrow": "TSO binoculars",
+            "heading": "Bring the details closer.",
+            "text": "Four binocular models designed for different viewing preferences, from compact travel to full-size observation.",
+            "button_label": "Explore the collection",
+            "button_link": "shopify://collections/binoculars"
+          }
+        },
+        "card_lm1": {
+          "type": "card",
+          "settings": {
+            "layout": "product",
+            "image": "shopify://shop_images/Frame_356_1.png",
+            "eyebrow": "TSO golf technology",
+            "heading": "Know your speed.",
+            "text": "Compact Doppler radar feedback for more informed practice sessions.",
+            "button_label": "Meet the LM1",
+            "button_link": "shopify://products/lm1-doppler-radar-golf-swing-monitor"
+          }
+        }
+      },
+      "block_order": ["card_binos", "card_lm1"],
+      "settings": {
+        "eyebrow": "Two ways to focus",
+        "heading": "Find your kind of clarity.",
+        "text": "Explore purpose-built binoculars for the outdoors, or get immediate swing-speed feedback with the TSO-LM1 golf monitor.",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
+    },
+    "tso_story_band": {
+      "type": "tso-story-band",
+      "settings": {
+        "image": "shopify://shop_images/tent.jpg",
+        "image_position": "left",
+        "eyebrow": "For the moments that matter",
+        "heading": "Take in the bigger picture.",
+        "text": "Bird watching, camping, hiking, travel, or a day at the game: the right optic helps you stay connected to the experience. TSO's binocular lineup gives you clear specifications to help choose the model that fits the way you spend your time.",
+        "button_label": "Find your binoculars",
+        "button_link": "shopify://collections/binoculars"
+      }
+    },
+    "tso_lm_promo": {
+      "type": "tso-lm-promo",
+      "blocks": {
+        "stat_speed": { "type": "stat", "settings": { "value": "199 mph", "label": "Maximum speed" } },
+        "stat_shots": { "type": "stat", "settings": { "value": "500", "label": "Shot history" } },
+        "stat_weight": { "type": "stat", "settings": { "value": "5.6 oz", "label": "Device weight" } }
+      },
+      "block_order": ["stat_speed", "stat_shots", "stat_weight"],
+      "settings": {
+        "eyebrow": "Meet the TSO-LM1",
+        "heading": "Better practice starts with better feedback.",
+        "text": "The TSO-LM1 uses Doppler radar to measure speeds up to 199 mph. Its sunlight-readable LCD, rechargeable battery, and storage for up to 500 shots make it a compact companion for practice sessions.",
+        "button_label": "Explore the LM1",
+        "button_link": "shopify://products/lm1-doppler-radar-golf-swing-monitor",
+        "image": "shopify://shop_images/Frame_356_1.png",
+        "caption": "TSO-LM1 · Doppler radar"
+      }
+    },
     "css_featured_cards": {
       "type": "custom-liquid",
       "settings": {
@@ -289,6 +356,9 @@
     "image-with-text",
     "featured_collection",
     "multicolumn_activity",
+    "tso_category_cards",
+    "tso_story_band",
+    "tso_lm_promo",
     "css_featured_cards"
   ]
 }

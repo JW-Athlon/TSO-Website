@@ -1,0 +1,57 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+
+<div class="tso tso-promo">
+  <div>
+    {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow tso-eyebrow--light">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    {%- if section.settings.heading != blank -%}<h2 class="tso-display">{{ section.settings.heading }}</h2>{%- endif -%}
+    {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="tso-promo__stats">
+        {%- for block in section.blocks -%}
+          <div {{ block.shopify_attributes }}><strong>{{ block.settings.value }}</strong><small>{{ block.settings.label }}</small></div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+    {%- if section.settings.button_label != blank -%}
+      <a class="tso-btn" {% if section.settings.button_link != blank %}href="{{ section.settings.button_link }}"{% endif %}>{{ section.settings.button_label }} <span aria-hidden="true">↗</span></a>
+    {%- endif -%}
+  </div>
+  <div class="tso-promo__visual">
+    {%- if section.settings.image != blank -%}
+      {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '400, 800, 1200' }}
+    {%- endif -%}
+    {%- if section.settings.caption != blank -%}<span class="tso-promo__caption">{{ section.settings.caption }}</span>{%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO LM1 promo",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Meet the TSO-LM1" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Better practice starts with better feedback." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "The TSO-LM1 uses Doppler radar to measure speeds up to 199 mph. Its sunlight-readable LCD, rechargeable battery, and storage for up to 500 shots make it a compact companion for practice sessions." },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Explore the LM1" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "image_picker", "id": "image", "label": "Product image" },
+    { "type": "text", "id": "caption", "label": "Image caption", "default": "TSO-LM1 · Doppler radar" }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "199 mph" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Maximum speed" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "TSO LM1 promo",
+      "blocks": [{ "type": "stat" }, { "type": "stat", "settings": { "value": "500", "label": "Shot history" } }, { "type": "stat", "settings": { "value": "5.6 oz", "label": "Device weight" } }]
+    }
+  ]
+}
+{% endschema %}

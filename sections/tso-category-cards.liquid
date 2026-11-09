@@ -1,0 +1,81 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="tso tso-cat">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="tso-head">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        {%- if section.settings.heading != blank -%}<h2 class="tso-display">{{ section.settings.heading }}</h2>{%- endif -%}
+      </div>
+      {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+    </div>
+    <div class="tso-cat__grid">
+      {%- for block in section.blocks -%}
+        <article class="tso-card{% if block.settings.layout == 'product' %} tso-card--product{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 1600 | image_tag: class: 'tso-card__img', loading: 'lazy', widths: '400, 800, 1200, 1600' }}
+          {%- endif -%}
+          <div class="tso-card__body">
+            {%- if block.settings.eyebrow != blank -%}<span class="tso-eyebrow tso-eyebrow--light">{{ block.settings.eyebrow }}</span>{%- endif -%}
+            {%- if block.settings.heading != blank -%}<h3 class="tso-display">{{ block.settings.heading }}</h3>{%- endif -%}
+            {%- if block.settings.text != blank -%}<p>{{ block.settings.text }}</p>{%- endif -%}
+            {%- if block.settings.button_label != blank -%}
+              <a class="tso-btn" {% if block.settings.button_link != blank %}href="{{ block.settings.button_link }}"{% endif %}>{{ block.settings.button_label }} <span aria-hidden="true">↗</span></a>
+            {%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO category cards",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Two ways to focus" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find your kind of clarity." },
+    { "type": "textarea", "id": "text", "label": "Description", "default": "Explore purpose-built binoculars for the outdoors, or get immediate swing-speed feedback with the TSO-LM1 golf monitor." },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Top padding", "default": 56 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 56 }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        { "type": "select", "id": "layout", "label": "Layout", "default": "photo", "options": [
+          { "value": "photo", "label": "Full photo background" },
+          { "value": "product", "label": "Product image on the right" }
+        ] },
+        { "type": "image_picker", "id": "image", "label": "Image" },
+        { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+        { "type": "text", "id": "heading", "label": "Heading" },
+        { "type": "textarea", "id": "text", "label": "Text" },
+        { "type": "text", "id": "button_label", "label": "Button label" },
+        { "type": "url", "id": "button_link", "label": "Button link" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "TSO category cards",
+      "blocks": [{ "type": "card" }, { "type": "card", "settings": { "layout": "product" } }]
+    }
+  ]
+}
+{% endschema %}
