@@ -143,14 +143,14 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "featured",
-        "products_to_show": 5,
+        "collection": "binoculars",
+        "products_to_show": 4,
         "title": "The TSO lineup.",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "columns_desktop": 5,
+        "columns_desktop": 4,
         "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": false,
