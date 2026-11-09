@@ -145,8 +145,11 @@
       "settings": {
         "collection": "binoculars",
         "products_to_show": 4,
-        "title": "The TSO lineup.",
-        "heading_size": "h1",
+        "title": "Four Binoculars. Four Different Perspectives.",
+        "eyebrow": "The binocular collection",
+        "header_link_label": "View all binoculars",
+        "header_link": "shopify://collections/binoculars",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
