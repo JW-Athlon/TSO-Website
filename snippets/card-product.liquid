@@ -149,6 +149,7 @@
         </div>
         <div class="card__content">
           <div class="card__information">
+            {% render 'tso-card-specs', product: card_product, part: 'kicker' %}
             <h3
               class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
               {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -161,7 +162,8 @@
                 class="full-unstyled-link"
                 aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }}{% if card_product.available == false or card_product.compare_at_price > card_product.price %} Badge-{{ section_id }}-{{ card_product.id }}{% endif %}"
               >
-                {{ card_product.title | escape }}
+                {%- capture tso_title -%}{% render 'tso-card-specs', product: card_product, part: 'title' %}{%- endcapture -%}
+                {%- if tso_title != blank -%}{{ tso_title | strip }}{%- else -%}{{ card_product.title | escape }}{%- endif -%}
               </a>
             </h3>
             <div class="card-information">
@@ -208,7 +210,7 @@
                 </p>
               {%- endif -%}
 
-              {% render 'tso-card-specs', product: card_product %}
+              {% render 'tso-card-specs', product: card_product, part: 'details' %}
               {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
               {%- if card_product.quantity_price_breaks_configured? -%}
                 {% if card_product.variants_count == 1 and quick_add == 'bulk' %}

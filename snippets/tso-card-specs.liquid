@@ -7,37 +7,45 @@
   assign use = ''
   assign chip1 = ''
   assign chip2 = ''
+  assign name = ''
   case product.handle
     when 'tso-coral-10x25-compact-binoculars'
-      assign kicker = 'Compact · 10× · 25 mm'
+      assign name = 'Coral HD'
+      assign kicker = '10× Magnification · 25 mm Objective'
       assign use = 'Compact travel and sporting-event viewing'
       assign chip1 = '9.5 oz'
       assign chip2 = '289 ft / 1,000 yd'
     when 'marlin-hd-10x42-bird-watching-binoculars'
-      assign kicker = 'Roof prism · 10× · 42 mm'
+      assign name = 'Marlin HD'
+      assign kicker = '10× Magnification · 42 mm Objective'
       assign use = 'Versatile full-size viewing for wildlife and outdoor use'
       assign chip1 = '23.8 oz'
       assign chip2 = '293 ft / 1,000 yd'
     when 'tso-polar-hd-10x50-binoculars'
-      assign kicker = 'Porro prism · 10× · 50 mm'
+      assign name = 'Polar HD'
+      assign kicker = '10× Magnification · 50 mm Objective'
       assign use = 'Large-objective outdoor viewing and wildlife observation'
       assign chip1 = '29 oz'
       assign chip2 = '360 ft / 1,000 yd'
     when 'turbine-hd-10x42-roof-prism-binoculars'
-      assign kicker = 'Roof prism · 10× · 42 mm'
+      assign name = 'Turbine HD'
+      assign kicker = '10× Magnification · 42 mm Objective'
       assign use = 'Lightweight roof-prism viewing for birding and hiking'
       assign chip1 = '18.8 oz'
       assign chip2 = '294 ft / 1,000 yd'
     when 'lm1-doppler-radar-golf-swing-monitor'
-      assign kicker = 'Golf · Doppler radar'
+      assign name = 'LM1 Swing Monitor'
+      assign kicker = 'Doppler radar · up to 199 mph'
       assign use = 'Swing-speed feedback for practice sessions'
       assign chip1 = '5.6 oz'
       assign chip2 = '500-shot memory'
   endcase
 -%}
-{%- if kicker != blank -%}
+{%- if part == 'title' -%}{{- name -}}
+{%- elsif part == 'kicker' and kicker != blank -%}
+  <span class="tso-spec__kicker">{{ kicker }}</span>
+{%- elsif kicker != blank and part == 'details' -%}
   <div class="tso-spec">
-    <span class="tso-spec__kicker">{{ kicker }}</span>
     <p class="tso-spec__use">{{ use }}</p>
     <div class="tso-spec__chips"><span>{{ chip1 }}</span><span>{{ chip2 }}</span></div>
   </div>
