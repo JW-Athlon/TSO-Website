@@ -73,19 +73,11 @@
     data-id="{{ section.id }}"
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
-      <div class="tso-lineup-head">
-      <div>
-      {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
       {%- if section.settings.title != blank -%}
         <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
-      </div>
-      {%- if section.settings.header_link_label != blank -%}
-        <a class="tso-text-link" href="{{ section.settings.header_link | default: section.settings.collection.url }}">{{ section.settings.header_link_label }} <span aria-hidden="true">↗</span></a>
-      {%- endif -%}
-      </div>
       {%- if section.settings.description != blank
         or section.settings.show_description
         and section.settings.collection.description != empty
@@ -250,9 +242,6 @@
       "type": "header",
       "content": "t:sections.featured-collection.settings.header_text.content"
     },   
-    { "type": "text", "id": "eyebrow", "label": "Eyebrow (small text above heading)" },
-    { "type": "text", "id": "header_link_label", "label": "Header link label" },
-    { "type": "url", "id": "header_link", "label": "Header link (blank = collection page)" },
     {
       "type": "inline_richtext",
       "id": "title",

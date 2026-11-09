@@ -63,8 +63,6 @@
         >
           {%- if card_product.featured_media -%}
             <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-              {%- capture tso_img_name -%}{% render 'tso-card-specs', product: card_product, part: 'title' %}{%- endcapture -%}
-              {%- if tso_img_name != blank -%}<a class="tso-media-link" href="{{ card_product.url }}" aria-label="{{ card_product.title | escape }}"></a>{%- endif -%}
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 <img
@@ -213,9 +211,7 @@
               {%- endif -%}
 
               {% render 'tso-card-specs', product: card_product, part: 'details' %}
-              {%- if tso_title != blank -%}<div class="tso-foot">{%- endif -%}
               {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-              {%- if tso_title != blank -%}<a class="tso-explore" href="{{ card_product.url }}">Explore <span aria-hidden="true">↗</span></a></div>{%- endif -%}
               {%- if card_product.quantity_price_breaks_configured? -%}
                 {% if card_product.variants_count == 1 and quick_add == 'bulk' %}
                   {% liquid
