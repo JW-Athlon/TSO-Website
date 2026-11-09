@@ -319,6 +319,17 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+  <style>
+    @media screen and (min-width:990px){
+      .header__inline-menu .header__menu-item,.header__inline-menu .header__submenu .header__menu-item{font-size:1.8rem}
+      .header__submenu.list-menu{padding:0;min-width:25rem;border:0;border-radius:8px;overflow:hidden;box-shadow:0 12px 32px rgba(5,8,15,.28);margin-top:8px}
+      .header__submenu .header__menu-item{padding:1.1rem 2.5rem;transition:background-color .15s ease,color .15s ease}
+      .header__submenu .header__menu-item,.header__submenu .header__menu-item *{text-decoration:none!important}
+      .header__submenu .header__menu-item.list-menu__item--active{color:#3a5eab;font-weight:600;box-shadow:inset 4px 0 0 #f99d25}
+      .header__submenu .header__menu-item:hover,.header__submenu .header__menu-item:focus-visible{background:#3a5eab;color:#fff}
+    }
+  </style>
+  <script src="{{ 'header-menu-click.js' | asset_url }}" defer></script>
   {%- if template.name == 'product' -%}
     <style>
       .product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}
