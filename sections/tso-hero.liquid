@@ -1,0 +1,65 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #shopify-section-{{ section.id }} .tso-hero__bg { opacity: {{ section.settings.image_opacity | divided_by: 100.0 }}; }
+{%- endstyle -%}
+
+<section class="tso tso-hero">
+  {%- if section.settings.background_image != blank -%}
+    {{ section.settings.background_image | image_url: width: 2400 | image_tag: class: 'tso-hero__bg', loading: 'eager', widths: '800, 1200, 1800, 2400', sizes: '100vw' }}
+  {%- endif -%}
+  <div class="tso-hero__copy">
+    {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow tso-eyebrow--light">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    <h1 class="tso-display">{{ section.settings.heading_line1 }}{% if section.settings.heading_accent != blank %}<br><em>{{ section.settings.heading_accent }}</em>{% endif %}</h1>
+    {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+    <div class="tso-hero__actions">
+      {%- if section.settings.button_label_1 != blank -%}
+        <a class="tso-btn" {% if section.settings.button_link_1 != blank %}href="{{ section.settings.button_link_1 }}"{% endif %}>{{ section.settings.button_label_1 }} <span aria-hidden="true">↗</span></a>
+      {%- endif -%}
+      {%- if section.settings.button_label_2 != blank -%}
+        <a class="tso-btn tso-btn--outline" {% if section.settings.button_link_2 != blank %}href="{{ section.settings.button_link_2 }}"{% endif %}>{{ section.settings.button_label_2 }} <span aria-hidden="true">↗</span></a>
+      {%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <div class="tso-hero__notes">
+        {%- for block in section.blocks -%}<span {{ block.shopify_attributes }}><i></i> {{ block.settings.text }}</span>{%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+  <div class="tso-hero__visual">
+    {%- if section.settings.product_image != blank -%}
+      <div class="tso-hero__product">
+        {{ section.settings.product_image | image_url: width: 1200 | image_tag: loading: 'eager', widths: '400, 800, 1200' }}
+      </div>
+    {%- endif -%}
+    {%- if section.settings.float_label != blank -%}
+      <div class="tso-hero__float"><small>{{ section.settings.float_label }}</small><strong>{{ section.settings.float_value }}</strong></div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "TSO hero",
+  "settings": [
+    { "type": "image_picker", "id": "background_image", "label": "Background photo (optional)" },
+    { "type": "range", "id": "image_opacity", "min": 0, "max": 100, "step": 10, "unit": "%", "label": "Photo visibility", "default": 40 },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Clear vision. Confident performance." },
+    { "type": "text", "id": "heading_line1", "label": "Heading line 1", "default": "See more." },
+    { "type": "text", "id": "heading_accent", "label": "Heading line 2 (orange)", "default": "Do more." },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "From the details beyond the trail to the numbers behind your swing, TSO brings practical performance and straightforward design to every outing." },
+    { "type": "text", "id": "button_label_1", "label": "Button 1 label", "default": "Explore binoculars" },
+    { "type": "url", "id": "button_link_1", "label": "Button 1 link" },
+    { "type": "text", "id": "button_label_2", "label": "Button 2 label", "default": "Discover the LM1" },
+    { "type": "url", "id": "button_link_2", "label": "Button 2 link" },
+    { "type": "image_picker", "id": "product_image", "label": "Product image" },
+    { "type": "text", "id": "float_label", "label": "Floating tag label", "default": "Marlin HD binoculars" },
+    { "type": "text", "id": "float_value", "label": "Floating tag value", "default": "10 × 42" }
+  ],
+  "blocks": [
+    { "type": "note", "name": "Note", "settings": [ { "type": "text", "id": "text", "label": "Text", "default": "Outdoor optics" } ] }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "TSO hero" }]
+}
+{% endschema %}

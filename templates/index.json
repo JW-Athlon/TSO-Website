@@ -9,8 +9,33 @@
  */
 {
   "sections": {
+    "tso_hero": {
+      "type": "tso-hero",
+      "blocks": {
+        "n1": { "type": "note", "settings": { "text": "Outdoor optics" } },
+        "n2": { "type": "note", "settings": { "text": "Golf technology" } },
+        "n3": { "type": "note", "settings": { "text": "Clear specifications" } }
+      },
+      "block_order": ["n1", "n2", "n3"],
+      "settings": {
+        "background_image": "shopify://shop_images/hiking.jpg",
+        "image_opacity": 40,
+        "eyebrow": "Clear vision. Confident performance.",
+        "heading_line1": "See more.",
+        "heading_accent": "Do more.",
+        "text": "From the details beyond the trail to the numbers behind your swing, TSO brings practical performance and straightforward design to every outing.",
+        "button_label_1": "Explore binoculars",
+        "button_link_1": "shopify://collections/binoculars",
+        "button_label_2": "Discover the LM1",
+        "button_link_2": "shopify://products/lm1-doppler-radar-golf-swing-monitor",
+        "product_image": "shopify://shop_images/Marlin-HD-10x42-Iso-1500-72dpi.jpg",
+        "float_label": "Marlin HD binoculars",
+        "float_value": "10 × 42"
+      }
+    },
     "image_banner_Hhgy74": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading_gyg9xe": {
           "type": "heading",
@@ -60,6 +85,7 @@
     },
     "image-with-text": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "caption": {
           "type": "caption",
@@ -119,7 +145,7 @@
       "settings": {
         "collection": "featured",
         "products_to_show": 5,
-        "title": "Featured Products",
+        "title": "The TSO lineup.",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -351,14 +377,15 @@
     }
   },
   "order": [
+    "tso_hero",
     "image_banner_Hhgy74",
     "multicolumn_trust",
-    "image-with-text",
-    "featured_collection",
-    "multicolumn_activity",
     "tso_category_cards",
+    "featured_collection",
     "tso_story_band",
     "tso_lm_promo",
+    "multicolumn_activity",
+    "image-with-text",
     "css_featured_cards"
   ]
 }
