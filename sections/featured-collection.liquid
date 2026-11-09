@@ -131,7 +131,6 @@
                   image_shape: section.settings.image_shape,
                   lazy_load: lazy_load,
                   show_secondary_image: section.settings.show_secondary_image,
-                  tso_last_image: section.settings.use_last_image,
                   show_vendor: section.settings.show_vendor,
                   show_rating: section.settings.show_rating,
                   skip_styles: skip_card_product_styles,
@@ -251,6 +250,9 @@
       "type": "header",
       "content": "t:sections.featured-collection.settings.header_text.content"
     },   
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow (small text above heading)" },
+    { "type": "text", "id": "header_link_label", "label": "Header link label" },
+    { "type": "url", "id": "header_link", "label": "Header link (blank = collection page)" },
     {
       "type": "inline_richtext",
       "id": "title",
