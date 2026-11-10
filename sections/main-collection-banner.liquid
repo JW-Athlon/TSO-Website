@@ -9,6 +9,11 @@
   }
 {%- endstyle -%}
 
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+<nav class="tso-breadcrumb" aria-label="Breadcrumb">
+  <span>Home</span> / <span>Collections</span> / <span aria-current="page">{{ collection.title | escape }}</span>
+</nav>
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
@@ -18,11 +23,13 @@
       {%- endif -%}
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}}
+        {%- if section.settings.heading != blank -%}{{- section.settings.heading | escape -}}{%- else -%}{{- collection.title | escape -}}{%- endif -%}
       </h1>
 
       {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
+        <div class="collection-hero__description rte">
+          {%- if section.settings.description != blank -%}{{ section.settings.description | escape }}{%- else -%}{{ collection.description }}{%- endif -%}
+        </div>
       {%- endif -%}
     </div>
 
@@ -55,6 +62,8 @@
   "class": "section",
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow (small text above title)" },
+    { "type": "text", "id": "heading", "label": "Heading (overrides collection title)" },
+    { "type": "textarea", "id": "description", "label": "Description (overrides collection description)" },
     {
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"

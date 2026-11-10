@@ -13,9 +13,11 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true,
+        "show_collection_image": false,
         "color_scheme": "scheme-3",
-        "eyebrow": "The TSO optical collection"
+        "eyebrow": "The TSO optical collection",
+        "heading": "Binoculars for the way you explore.",
+        "description": "Compare four HD binocular models by magnification, objective lens diameter, optical design, field of view, weight, and weather protection."
       }
     },
     "product-grid": {

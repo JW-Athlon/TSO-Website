@@ -129,9 +129,9 @@
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: Georgia, 'Times New Roman', serif; /* TSO: serif headings like HTML concept */
         --font-heading-style: {{ settings.type_header_font.style }};
-        --font-heading-weight: {{ settings.type_header_font.weight }};
+        --font-heading-weight: 400;
 
         --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
         --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
@@ -339,6 +339,28 @@
       .thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}
     </style>
   {%- endif -%}
+    <script>
+/* TSO: smart title case for headings (small words stay lowercase mid-title) */
+document.addEventListener('DOMContentLoaded',function(){
+  var small=/^(a|an|the|and|but|or|nor|for|so|yet|of|to|in|on|at|by|up|as|with|from|into|per|vs)$/i;
+  var keep=/^(mph|oz|mm|ft|lbs?|yds?)$/i;
+  document.querySelectorAll('h1,h2,h3').forEach(function(h){
+    var nodes=[],w=document.createTreeWalker(h,NodeFilter.SHOW_TEXT,null);
+    while(w.nextNode()){ if(w.currentNode.nodeValue.trim()) nodes.push(w.currentNode); }
+    nodes.forEach(function(n,ni){
+      var parts=n.nodeValue.split(/(\s+)/), idx=0, total=parts.filter(function(x){return x.trim()}).length;
+      n.nodeValue=parts.map(function(t){
+        if(!t.trim()) return t;
+        var first=(ni===0&&idx===0), last=(ni===nodes.length-1&&idx===total-1); idx++;
+        var core=t.replace(/[^A-Za-z]/g,'');
+        if(/\d/.test(t)||/[A-Z]/.test(t.slice(1))||keep.test(core)) return t;
+        if(!first&&!last&&small.test(core)) return t.toLowerCase();
+        return t.replace(/[A-Za-z]/,function(c){return c.toUpperCase()});
+      }).join('');
+    });
+  });
+});
+</script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

@@ -26,7 +26,7 @@
 
 .tso-display {
   font-family: var(--font-heading-family);
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.08;
   margin: 1.2rem 0 1.4rem;
@@ -61,7 +61,7 @@
   gap: 2.5rem;
   margin-bottom: 3.4rem;
 }
-.tso-head .tso-display { font-size: clamp(3.2rem, 4vw, 5.2rem); margin-bottom: 0; }
+.tso-head .tso-display { font-size: clamp(2.6rem, 4vw, 4.2rem); margin-bottom: 0; }
 .tso-head p { max-width: 49rem; margin: 0; color: var(--tso-muted); font-size: 1.5rem; line-height: 1.75; }
 @media screen and (max-width: 749px) {
   .tso-head { display: block; }
@@ -104,7 +104,7 @@
 .tso-story__photo { position: relative; min-height: 45rem; overflow: hidden; }
 .tso-story__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .tso-story__copy { padding: clamp(4.5rem, 6vw, 8.5rem); align-self: center; }
-.tso-story__copy h2 { font-size: clamp(3.4rem, 4vw, 5.5rem); }
+.tso-story__copy h2 { font-size: clamp(2.7rem, 4vw, 4.4rem); }
 .tso-story__copy p { font-size: 1.5rem; line-height: 1.85; color: var(--tso-muted); max-width: 48rem; margin: 0 0 2.4rem; }
 @media screen and (max-width: 749px) {
   .tso-story { grid-template-columns: 1fr; }
@@ -124,7 +124,7 @@
   padding: clamp(5rem, 6vw, 8.6rem) clamp(2.2rem, 8vw, 12.5rem);
   overflow: hidden;
 }
-.tso-promo h2 { font-size: clamp(3.6rem, 4.3vw, 6.2rem); color: #fff; }
+.tso-promo h2 { font-size: clamp(2.9rem, 4.3vw, 5.0rem); color: #fff; }
 .tso-promo p { font-size: 1.5rem; line-height: 1.8; color: #d0d7e6; max-width: 53rem; margin: 0; }
 .tso-promo__stats { display: flex; gap: 3rem; margin: 2.5rem 0 2.8rem; flex-wrap: wrap; }
 .tso-promo__stats strong { display: block; font-family: var(--font-heading-family); font-size: 3.2rem; font-weight: 700; color: var(--tso-orange); }
@@ -204,7 +204,7 @@
   background: radial-gradient(circle at 72% 40%, rgba(58, 94, 171, 0.35) 0, transparent 45%), linear-gradient(90deg, rgba(5, 8, 15, 0.7), rgba(5, 8, 15, 0.1));
 }
 .tso-hero__copy { position: relative; z-index: 2; align-self: center; padding: clamp(5.5rem, 7vw, 11rem) 5vw clamp(5.5rem, 6vw, 9.5rem) clamp(2.6rem, 8vw, 12.5rem); }
-.tso-hero h1 { font-size: clamp(5.2rem, 6.1vw, 9.2rem); max-width: 67rem; margin: 2rem 0 2.4rem; color: #fff; }
+.tso-hero h1 { font-weight: 400; font-size: clamp(4.2rem, 6.1vw, 7.4rem); max-width: 67rem; margin: 2rem 0 2.4rem; color: #fff; }
 .tso-hero h1 em { color: var(--tso-orange); font-style: normal; }
 .tso-hero__copy > p { max-width: 49rem; color: #d0d7e6; font-size: 1.6rem; line-height: 1.8; margin: 0; }
 .tso-hero__actions { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 3.1rem; }
@@ -234,7 +234,7 @@
 @media screen and (max-width: 749px) {
   .tso-hero { display: flex; flex-direction: column; min-height: 0; }
   .tso-hero__copy { padding: 5.8rem 2.4rem 2.5rem; }
-  .tso-hero h1 { font-size: 5.4rem; margin: 1.5rem 0 1.7rem; }
+  .tso-hero h1 { font-size: 4.3rem; margin: 1.5rem 0 1.7rem; }
   .tso-hero__copy > p { font-size: 1.4rem; }
   .tso-hero__notes { margin-top: 3rem; gap: 1.2rem; font-size: 1rem; }
   .tso-hero__visual { min-height: 30rem; padding: 1rem 3rem 4rem; width: 100%; }
@@ -275,17 +275,23 @@
 
 /* Lineup heading: eyebrow + heading left, link right */
 .tso-lineup-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 2.5rem; width: 100%; }
-.collection__title .tso-lineup-head h2.title { margin: 1rem 0 0; font-size: clamp(2.6rem, 3vw, 3.8rem); line-height: 1.1; }
+.collection__title .tso-lineup-head h2.title { margin: 1rem 0 0; font-size: clamp(2.1rem, 3vw, 3.0rem); line-height: 1.1; }
 .tso-text-link { font-size: 1.1rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #0a0f1a; text-decoration: none; border-bottom: 1px solid #f99d25; padding-bottom: 0.5rem; white-space: nowrap; }
 .tso-text-link:hover { color: #3a5eab; }
 @media screen and (max-width: 749px) { .tso-lineup-head { display: block; } .tso-text-link { display: inline-block; margin-top: 1.6rem; } }
 
 
-/* ---------- Collection banner as page intro ---------- */
-.collection-hero.color-scheme-3, .collection-hero { }
-.collection-hero__text-wrapper .tso-eyebrow { margin-bottom: 1.2rem; }
-.collection-hero__title { font-family: var(--font-heading-family); font-weight: 700; letter-spacing: -0.02em; }
-.collection-hero__description { max-width: 60rem; line-height: 1.8; }
+/* ---------- Collection banner as page intro (matches HTML concept) ---------- */
+.tso-breadcrumb { padding: 2.3rem max(2.2rem, 7vw); font-size: 1.1rem; letter-spacing: .12em; text-transform: uppercase; color: #7b8499; }
+.tso-breadcrumb a { color: inherit; text-decoration: none; }
+.tso-breadcrumb a:hover { color: var(--tso-blue); }
+.collection-hero { padding: 0; }
+.collection-hero__inner { max-width: none; padding: 6.5rem max(2.2rem, 7vw); }
+.collection-hero__text-wrapper { max-width: 72rem; }
+.collection-hero__text-wrapper .tso-eyebrow { margin-bottom: 1rem; }
+.collection-hero__title { font-family: var(--font-heading-family); font-weight: 400; letter-spacing: -.045em; line-height: 1.04; font-size: clamp(3.4rem, 5vw, 5.4rem); margin: 1rem 0; }
+.collection-hero__description { max-width: 60rem; line-height: 1.8; font-size: 1.5rem; }
+@media screen and (max-width: 749px) { .collection-hero__inner { padding: 4.2rem 2rem; } .collection-hero__title { font-size: 3.6rem; } }
 
 /* ---------- Compare table ---------- */
 .tso-compare { background: var(--tso-mist); color: var(--tso-ink); padding: clamp(5.2rem, 6vw, 9rem) 0; }
