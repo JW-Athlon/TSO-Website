@@ -287,10 +287,11 @@
 .tso-breadcrumb a:hover { color: var(--tso-blue); }
 .collection-hero { padding: 0; }
 .collection-hero__inner { max-width: none; padding: 6.5rem max(2.2rem, 7vw); }
-.collection-hero__text-wrapper { max-width: 72rem; }
+.collection-hero__text-wrapper { max-width: none; }
 .collection-hero__text-wrapper .tso-eyebrow { margin-bottom: 1rem; }
 .collection-hero__title { font-family: var(--font-heading-family); font-weight: 400; letter-spacing: -.045em; line-height: 1.04; font-size: clamp(3.4rem, 5vw, 5.4rem); margin: 1rem 0; }
-.collection-hero__description { max-width: 60rem; line-height: 1.8; font-size: 1.5rem; }
+.collection-hero__title + .collection-hero__description, .collection-hero__description { max-width: 60rem; line-height: 1.7; font-size: 1.2rem; }
+@media screen and (min-width: 750px) { .collection-hero__title { white-space: nowrap; } .collection-hero__title + .collection-hero__description { font-size: 1.2rem; max-width: 60rem; } }
 @media screen and (max-width: 749px) { .collection-hero__inner { padding: 4.2rem 2rem; } .collection-hero__title { font-size: 3.6rem; } }
 
 /* ---------- Compare table ---------- */
