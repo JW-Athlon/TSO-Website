@@ -265,8 +265,8 @@
 :is([id$='featured_collection'], [id$='product-grid']) .card-information .tso-spec { flex: 1; width: 100%; }
 :is([id$='featured_collection'], [id$='product-grid']) .tso-foot { display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #dde2ec; margin-top: 1.6rem; padding: 1.4rem 0 1.6rem; }
 :is([id$='featured_collection'], [id$='product-grid']) .tso-foot .price { margin: 0; padding: 0; border: 0; font-weight: 800; font-size: 1.6rem; width: auto; text-align: left; }
-.tso-explore { position: relative; z-index: 3; font-size: 1rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #3a5eab; text-decoration: none; }
-.tso-explore:hover { color: #0a0f1a; }
+.tso-explore { position: relative; z-index: 3; display: inline-flex; align-items: center; justify-content: center; gap: 0.8rem; min-height: 3.6rem; padding: 0 1.6rem; background: var(--tso-orange, #f99d25); border: 1px solid var(--tso-orange, #f99d25); font-size: 1rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #0a0f1a; text-decoration: none; transition: background .2s, border-color .2s, transform .2s; }
+.tso-explore:hover { background: #ffb04a; border-color: #ffb04a; color: #0a0f1a; transform: translateY(-1px); }
 
 /* Lineup: only the image and Explore are links (does not touch image positioning) */
 :is([id$='featured_collection'], [id$='product-grid']) .full-unstyled-link::after { display: none; }
