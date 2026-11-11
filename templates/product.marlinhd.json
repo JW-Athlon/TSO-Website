@@ -60,7 +60,8 @@
           "type": "custom_liquid",
           "settings": {
             "custom_liquid": "{% render 'tso-product-highlights', product: product, part: 'subtitle' %}"
-          }
+          },
+          "disabled": true
         },
         "tso_stats": {
           "type": "custom_liquid",
@@ -73,9 +74,10 @@
           "settings": {
             "heading": "Product overview",
             "icon": "none",
-            "content": "<p>A full-size 10×42 roof-prism binocular with multi-coated optics, 14.7 mm eye relief, and a fully sealed waterproof body.</p>",
+            "content": "<p>A full-size 10x42 roof-prism binocular with multi-coated optics, 14.7 mm eye relief, and a fully sealed waterproof body.</p>",
             "page": ""
-          }
+          },
+          "disabled": true
         },
         "tab_features": {
           "type": "collapsible_tab",
@@ -84,7 +86,8 @@
             "icon": "none",
             "content": "<p>Rubber armor provides an external protective coating against bumps and drops. The Marlin HD is fully sealed and listed as waterproof and submersible. It is tripod adaptable with a standard tripod adapter, sold separately.</p>",
             "page": ""
-          }
+          },
+          "disabled": true
         },
         "tab_warranty": {
           "type": "collapsible_tab",
@@ -93,29 +96,44 @@
             "icon": "none",
             "content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
             "page": ""
+          },
+          "disabled": true
+        },
+        "tso_explore": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<a class=\"tso-text-link tso-explore-link\" href=\"{{ routes.collections_url }}/binoculars\">Explore other binoculars <span aria-hidden=\"true\">↗</span></a>"
+          }
+        },
+        "tso_warranty": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"tso-warranty\"><span class=\"tso-warranty__seal\" aria-hidden=\"true\">✓</span><span><b>3-year limited warranty</b><br>All TSO binoculars are covered by a 3-year limited warranty.</span></div>"
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
-        "tso_subtitle",
         "description",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "tso_explore",
         "tso_stats",
+        "tso_warranty",
+        "tso_subtitle",
         "tab_overview",
         "tab_features",
         "tab_warranty",
         "share"
       ],
       "settings": {
-        "enable_sticky_info": true,
+        "enable_sticky_info": false,
         "color_scheme": "scheme-1",
-        "media_size": "small",
-        "constrain_to_viewport": true,
+        "media_size": "medium",
+        "constrain_to_viewport": false,
         "media_fit": "contain",
         "gallery_layout": "thumbnail",
         "mobile_thumbnails": "hide",
@@ -127,140 +145,149 @@
         "padding_bottom": 12
       }
     },
-    "multicolumn_Ene7rm": {
-      "type": "multicolumn",
+    "tso_quick": {
+      "type": "tso-quick-band",
       "blocks": {
-        "column_Jrh8ix": {
-          "type": "column",
+        "q0": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/71ugFdav3-L._AC_SL1500.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "icon": "◎",
+            "title": "10× Magnification",
+            "text": "Bring distant subjects closer"
           }
         },
-        "column_H8iVfr": {
-          "type": "column",
+        "q1": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/71EnlAfcNOL._AC_SL1500.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "icon": "◉",
+            "title": "Fully Waterproof",
+            "text": "Sealed and submersible"
           }
         },
-        "column_EVM3EW": {
-          "type": "column",
+        "q2": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/71ugSiCuNXL._AC_SL1500.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "icon": "◇",
+            "title": "Multi-Coated Optics",
+            "text": "Designed for clear viewing"
           }
         },
-        "column_HnVcQe": {
-          "type": "column",
+        "q3": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/71MpOoEjtTL._AC_SL1200.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_bYcYHR": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/71f3Hggcg2L._AC_SL1500.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_KBHjtJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/61cLgObgRGL._AC_SL1500.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
+            "icon": "⌁",
+            "title": "Tripod Adaptable",
+            "text": "For steady hands-free viewing"
           }
         }
       },
       "block_order": [
-        "column_Jrh8ix",
-        "column_H8iVfr",
-        "column_EVM3EW",
-        "column_HnVcQe",
-        "column_bYcYHR",
-        "column_KBHjtJ"
+        "q0",
+        "q1",
+        "q2",
+        "q3"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "settings": {}
+    },
+    "tso_story": {
+      "type": "tso-product-story",
+      "blocks": {
+        "c0": {
+          "type": "callout",
+          "settings": {
+            "title": "10x42 roof-prism configuration",
+            "text": "A full-size format with a 4.2 mm exit pupil."
+          }
+        },
+        "c1": {
+          "type": "callout",
+          "settings": {
+            "title": "293 ft field of view at 1,000 yd",
+            "text": "Follow movement across a wide viewing area."
+          }
+        },
+        "c2": {
+          "type": "callout",
+          "settings": {
+            "title": "23 ft close focus",
+            "text": "Focus on subjects as close as 23 feet."
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2"
+      ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "image": "shopify://shop_images/71f3Hggcg2L._AC_SL1500.jpg",
+        "stamp": "A versatile view outdoors",
+        "eyebrow": "A closer look at the outdoors",
+        "heading": "See the details.<br>Stay in the moment.",
+        "text": "<p>The Marlin HD pairs 10× magnification with 42 mm objective lenses in a full-size roof-prism design. Its 293-foot field of view at 1,000 yards gives you room to locate and follow the subject.</p><p>From bird watching and wildlife viewing to sporting events and travel, the Marlin HD is built to be a versatile companion when the view matters.</p>"
       }
     },
-    "multicolumn_TyqFj4": {
-      "type": "multicolumn",
+    "tso_cards": {
+      "type": "tso-image-cards",
       "blocks": {
-        "column_jLkUMW": {
-          "type": "column",
+        "c_ten": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/Rubber-Armor.png",
-            "title": "Rubber Armor",
-            "text": "<p>An external rubber coating provides substantial protection from bumps and drops.&nbsp;</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/71MpOoEjtTL._AC_SL1200.jpg",
+            "eyebrow": "Gift idea",
+            "title": "A Great Gift",
+            "text": "Great for dads, bird watchers, and every outdoor enthusiast in your life."
           }
         },
-        "column_TPDidC": {
-          "type": "column",
+        "c_rub": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/Waterproof.png",
-            "title": "Waterproof",
-            "text": "<p>Fully sealed, TSO binoculars are able to withstand being submersed.&nbsp;</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/71EnlAfcNOL._AC_SL1500.jpg",
+            "eyebrow": "Durable grip",
+            "title": "Rubber Armor",
+            "text": "The external rubber coating helps protect against bumps and drops while providing a secure, non-slip grip."
+          }
+        },
+        "c_wat": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/71ugSiCuNXL._AC_SL1500.jpg",
+            "eyebrow": "Weather ready",
+            "title": "Fully Waterproof",
+            "text": "The Marlin HD is fully sealed and can withstand being submerged in water."
+          }
+        },
+        "c_adj": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/71ugFdav3-L._AC_SL1500.jpg",
+            "eyebrow": "Personalized fit",
+            "title": "Easy Adjustments",
+            "text": "Twist-up eyecups, ±5 diopter adjustment, a center focus knob, and an adjustable interpupillary distance (57–76 mm) help tailor the view to you."
           }
         }
       },
       "block_order": [
-        "column_jLkUMW",
-        "column_TPDidC"
+        "c_ten",
+        "c_rub",
+        "c_wat",
+        "c_adj"
       ],
-      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Performance Features Explained",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "eyebrow": "Purposeful details",
+        "heading": "Built around the features that matter.",
+        "text": "The practical benefits of the Marlin HD, at a glance."
+      }
+    },
+    "tso_specs": {
+      "type": "tso-specs",
+      "settings": {
+        "eyebrow": "The numbers, clearly",
+        "heading": "Marlin HD technical specifications.",
+        "text": "The quick facts above give you the essentials; this table has everything else for detail-oriented buyers.",
+        "pills": "10x42, Roof prism, Multi-coated, Fully sealed",
+        "caption": "Complete product specifications",
+        "rows": "Model | TSO Marlin HD (T111001)\nMagnification | 10X\nObjective Lens Diameter | 42 mm\nPrism Type | Roof prism\nCoating | Multi-coated\nExit Pupil | 4.2 mm\nDiopter Adjustment | ±5\nField of View (Angular) | 5.7°\nField of View @ 1,000 yd | 293 ft\nClose Focus | 23 ft\nInterpupillary Distance | 57–76 mm\nEye Relief | 14.7 mm\nDimensions (H × W) | 6 × 5.12 in\nWeight | 23.8 oz\nWaterproofing | Waterproof, fully sealed (submersible)"
       }
     },
     "slideshow_AdBFX4": {
@@ -319,176 +346,97 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "specs_table": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_60a819c_spec": {
-          "type": "ai_gen_block_60a819c",
-          "settings": {
-            "heading": "Product Specifications",
-            "intro": "",
-            "desktop_width_percent": 90,
-            "column_one_heading": "Specification",
-            "column_two_heading": "Marlin HD",
-            "row_1_left": "Model",
-            "row_1_right": "TSO Marlin HD (T111001)",
-            "row_2_left": "Magnification",
-            "row_2_right": "10X",
-            "row_3_left": "Objective Lens Diameter",
-            "row_3_right": "42 mm",
-            "row_4_left": "Prism Type",
-            "row_4_right": "Roof prism",
-            "row_5_left": "Coating",
-            "row_5_right": "Multi-coated",
-            "row_6_left": "Exit Pupil",
-            "row_6_right": "4.2 mm",
-            "row_7_left": "Diopter Adjustment",
-            "row_7_right": "±5",
-            "row_8_left": "Field of View (Angular)",
-            "row_8_right": "5.7°",
-            "row_9_left": "Field of View @ 1000 yd",
-            "row_9_right": "293 ft",
-            "row_10_left": "Close Focus",
-            "row_10_right": "23 ft",
-            "row_11_left": "Interpupillary Distance",
-            "row_11_right": "57–76 mm",
-            "row_12_left": "Eye Relief",
-            "row_12_right": "14.7 mm",
-            "row_13_left": "Dimensions (H × W)",
-            "row_13_right": "6 × 5.12 in",
-            "row_14_left": "Weight",
-            "row_14_right": "23.8 oz",
-            "row_15_left": "Waterproofing",
-            "row_15_right": "Waterproof, fully sealed (submersible)",
-            "padding_vertical": 24
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_60a819c_spec"
-      ],
-      "settings": {}
-    },
     "faq_bino": {
-      "type": "collapsible-content",
+      "type": "tso-faq",
       "blocks": {
-        "faq_row_1": {
-          "type": "collapsible_row",
+        "faq_1": {
+          "type": "item",
           "settings": {
-            "heading": "What does 10x42 mean?",
-            "icon": "none",
-            "row_content": "<p>The first number is magnification: 10X makes distant objects appear 10 times closer. The second is the objective lens diameter, 42 mm. Larger lenses let in more light.</p>",
-            "page": ""
+            "question": "What does 10x42 mean?",
+            "answer": "<p>The first number is magnification: 10X makes distant objects appear 10 times closer. The second is the objective lens diameter, 42 mm. Larger lenses let in more light.</p>"
           }
         },
-        "faq_row_2": {
-          "type": "collapsible_row",
+        "faq_2": {
+          "type": "item",
           "settings": {
-            "heading": "Are the Marlin HD binoculars waterproof?",
-            "icon": "none",
-            "row_content": "<p>Yes. The Marlin HD is fully sealed, so it can withstand being submerged in water.</p>",
-            "page": ""
+            "question": "Are the Marlin HD binoculars waterproof?",
+            "answer": "<p>Yes. The Marlin HD is fully sealed, so it can withstand being submerged in water.</p>"
           }
         },
-        "faq_row_3": {
-          "type": "collapsible_row",
+        "faq_3": {
+          "type": "item",
           "settings": {
-            "heading": "What is the field of view?",
-            "icon": "none",
-            "row_content": "<p>The field of view is 5.7°, which is 293 ft wide at 1000 yards. A wider field of view makes it easier to find and follow your subject.</p>",
-            "page": ""
+            "question": "What is the field of view?",
+            "answer": "<p>The field of view is 5.7°, which is 293 ft wide at 1,000 yards. A wider field of view makes it easier to find and follow your subject.</p>"
           }
         },
-        "faq_row_4": {
-          "type": "collapsible_row",
+        "faq_4": {
+          "type": "item",
           "settings": {
-            "heading": "How close can I focus?",
-            "icon": "none",
-            "row_content": "<p>The close focus distance is 23 ft.</p>",
-            "page": ""
+            "question": "How close can I focus?",
+            "answer": "<p>The close focus distance is 23 ft.</p>"
           }
         },
-        "faq_row_5": {
-          "type": "collapsible_row",
+        "faq_5": {
+          "type": "item",
           "settings": {
-            "heading": "What is the eye relief?",
-            "icon": "none",
-            "row_content": "<p>The eye relief is 14.7 mm. Eye relief is how far your eye can sit from the eyepiece and still see the full image; more is generally more comfortable, especially for people who wear glasses.</p>",
-            "page": ""
+            "question": "What is the eye relief?",
+            "answer": "<p>The eye relief is 14.7 mm. Eye relief is how far your eye can sit from the eyepiece and still see the full image; more is generally more comfortable, especially for people who wear glasses.</p>"
           }
         },
-        "faq_row_6": {
-          "type": "collapsible_row",
+        "faq_6": {
+          "type": "item",
           "settings": {
-            "heading": "Will they fit my eyes?",
-            "icon": "none",
-            "row_content": "<p>The interpupillary distance (the spacing between the two barrels) adjusts from 57–76 mm, which suits most adults.</p>",
-            "page": ""
+            "question": "Will it fit my eyes?",
+            "answer": "<p>The interpupillary distance (the spacing between the two barrels) adjusts from 57–76 mm, which suits most adults.</p>"
           }
         },
-        "faq_row_7": {
-          "type": "collapsible_row",
+        "faq_7": {
+          "type": "item",
           "settings": {
-            "heading": "How big and heavy are they?",
-            "icon": "none",
-            "row_content": "<p>They measure 6 × 5.12 in (height × width) and weigh 23.8 oz.</p>",
-            "page": ""
+            "question": "How big and heavy is it?",
+            "answer": "<p>It measures 6 × 5.12 in (height × width) and weighs 23.8 oz.</p>"
           }
         },
-        "faq_row_8": {
-          "type": "collapsible_row",
+        "faq_8": {
+          "type": "item",
           "settings": {
-            "heading": "What are they best for?",
-            "icon": "none",
-            "row_content": "<p>The Marlin HD is a good fit for bird watching, hunting, whale watching, sporting events and travel.</p>",
-            "page": ""
+            "question": "What is it best for?",
+            "answer": "<p>The Marlin HD is a good fit for bird watching, hunting, whale watching, sporting events, and travel.</p>"
           }
         },
-        "faq_row_9": {
-          "type": "collapsible_row",
+        "faq_9": {
+          "type": "item",
           "settings": {
-            "heading": "Can I use them on a tripod?",
-            "icon": "none",
-            "row_content": "<p>Yes. They are tripod adaptable, using a standard tripod adapter (sold separately), for steady, hands-free viewing during long observation sessions.</p>",
-            "page": ""
+            "question": "Can I use it on a tripod?",
+            "answer": "<p>Yes. It is tripod adaptable, using a standard tripod adapter (sold separately), for steady, hands-free viewing during long observation sessions.</p>"
           }
         },
-        "faq_row_10": {
-          "type": "collapsible_row",
+        "faq_10": {
+          "type": "item",
           "settings": {
-            "heading": "What is your warranty and return policy?",
-            "icon": "none",
-            "row_content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
-            "page": ""
+            "question": "What is your warranty and return policy?",
+            "answer": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>"
           }
         }
       },
       "block_order": [
-        "faq_row_1",
-        "faq_row_2",
-        "faq_row_3",
-        "faq_row_4",
-        "faq_row_5",
-        "faq_row_6",
-        "faq_row_7",
-        "faq_row_8",
-        "faq_row_9",
-        "faq_row_10"
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "faq_9",
+        "faq_10"
       ],
       "settings": {
-        "caption": "Questions",
-        "heading": "Frequently Asked Questions",
-        "heading_size": "h2",
-        "heading_alignment": "center",
-        "layout": "none",
-        "container_color_scheme": "",
-        "color_scheme": "scheme-1",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_first",
-        "padding_top": 40,
-        "padding_bottom": 40
+        "eyebrow": "Good to know",
+        "heading": "Marlin HD questions, answered.",
+        "text": "Quick answers to common questions about the Marlin HD.",
+        "open_first": true
       }
     },
     "shipping_bino": {
@@ -569,10 +517,23 @@
         "padding_bottom": 40
       }
     },
+    "related_binos": {
+      "type": "tso-related",
+      "settings": {
+        "collection": "binoculars",
+        "eyebrow": "Explore the full range",
+        "title": "More ways to see.",
+        "link_label": "View all binoculars",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
+        "padding_top": 48,
+        "padding_bottom": 56
+      }
+    },
     "css_gallery": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<style>\n.product-media-container{--aspect-ratio:1!important;--ratio-percent:100%!important}\n@media screen and (min-width:990px){.product-media-container.constrain-height{--constrained-height:450px!important}}\n@media screen and (max-width:989px){.product-media-container.constrain-height{--viewport-offset:520px!important;--constrained-min-height:320px!important}}\n.product-media-container .media img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\n.thumbnail-list .thumbnail img,.thumbnail-slider .thumbnail img{object-fit:contain!important;padding:4%;box-sizing:border-box;background:#fff}\nslideshow-component{display:flex!important;flex-direction:column}\nslideshow-component.page-width{padding-top:24px!important;padding-bottom:24px!important}\nslideshow-component .slideshow{order:1}\nslideshow-component .slideshow__controls--top{order:2}\n@media screen and (min-width:750px){slideshow-component.page-width{width:75%;max-width:1050px}}\n</style>",
+        "custom_liquid": "<style>\nslideshow-component{display:flex!important;flex-direction:column}\nslideshow-component.page-width{padding-top:12px!important;padding-bottom:24px!important}\nslideshow-component .slideshow{order:1}\nslideshow-component .slideshow__controls--top{order:2}\n@media screen and (min-width:750px){slideshow-component.page-width{width:75%;max-width:1050px}}\n</style>",
         "color_scheme": "scheme-1",
         "padding_top": 0,
         "padding_bottom": 0
@@ -581,14 +542,15 @@
   },
   "order": [
     "main",
+    "tso_quick",
+    "tso_story",
+    "tso_cards",
+    "tso_specs",
     "slideshow_AdBFX4",
-    "multicolumn_TyqFj4",
-    "multicolumn_Ene7rm",
-    "specs_table",
     "faq_bino",
     "shipping_bino",
     "reviews_bino",
+    "related_binos",
     "css_gallery"
   ]
 }
- 

@@ -1,0 +1,31 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+<div class="tso tso-quick">
+  <div class="tso-quick__inner">
+    {%- for block in section.blocks -%}
+      <div class="tso-quick__item" {{ block.shopify_attributes }}>
+        <span class="tso-quick__icon" aria-hidden="true">{{ block.settings.icon }}</span>
+        <div><b>{{ block.settings.title }}</b><small>{{ block.settings.text }}</small></div>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO quick facts band",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon character", "default": "◎" },
+        { "type": "text", "id": "title", "label": "Title", "default": "10× Magnification" },
+        { "type": "text", "id": "text", "label": "Subtext", "default": "Bring distant subjects closer" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "TSO quick facts band", "blocks": [{ "type": "item" }, { "type": "item" }, { "type": "item" }, { "type": "item" }] }]
+}
+{% endschema %}

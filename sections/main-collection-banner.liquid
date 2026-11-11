@@ -11,7 +11,7 @@
 
 {{ 'tso-sections.css' | asset_url | stylesheet_tag }}
 <nav class="tso-breadcrumb" aria-label="Breadcrumb">
-  <span>Home</span> / <span>Collections</span> / <span aria-current="page">{{ collection.title | escape }}</span>
+  <a href="{{ routes.root_url }}">Home</a> / <span aria-current="page">{{ collection.title | escape }}</span>
 </nav>
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">

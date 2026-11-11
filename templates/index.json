@@ -30,7 +30,7 @@
         "button_link_2": "shopify://products/lm1-doppler-radar-golf-swing-monitor",
         "product_image": "shopify://shop_images/Marlin-HD-10x42-Iso-1500-72dpi.jpg",
         "float_label": "Marlin HD binoculars",
-        "float_value": "10 × 42"
+        "float_value": "10x42"
       }
     },
     "image_banner_Hhgy74": {
@@ -263,7 +263,7 @@
           "settings": {
             "image": "shopify://shop_images/hunting.jpg",
             "title": "Hunting",
-            "text": "<p>It's in your sights with Marlin HD</p>",
+            "text": "<p>It’s in your sights with Marlin HD</p>",
             "link_label": "Shop Marlin HD",
             "link": "shopify://products/marlin-hd-10x42-bird-watching-binoculars"
           }
@@ -346,7 +346,7 @@
         "image_position": "left",
         "eyebrow": "For the moments that matter",
         "heading": "Take in the bigger picture.",
-        "text": "Bird watching, camping, hiking, travel, or a day at the game: the right optic helps you stay connected to the experience. TSO's binocular lineup gives you clear specifications to help choose the model that fits the way you spend your time.",
+        "text": "Bird watching, camping, hiking, travel, or a day at the game: the right optic helps you stay connected to the experience. TSO’s binocular lineup gives you clear specifications to help you choose the model that fits the way you spend your time.",
         "button_label": "Find your binoculars",
         "button_link": "shopify://collections/binoculars"
       }

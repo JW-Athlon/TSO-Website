@@ -1,0 +1,64 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+
+<div class="color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="collection section-{{ section.id }}-padding" style="padding-top:{{ section.settings.padding_top }}px;padding-bottom:{{ section.settings.padding_bottom }}px">
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width">
+      <div class="tso-lineup-head">
+        <div>
+          {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+          {%- if section.settings.title != blank -%}<h2 class="title inline-richtext {{ section.settings.heading_size }}">{{ section.settings.title }}</h2>{%- endif -%}
+        </div>
+        {%- if section.settings.link_label != blank -%}
+          <a class="tso-text-link" href="{{ section.settings.collection.url }}">{{ section.settings.link_label }} <span aria-hidden="true">↗</span></a>
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="page-width-desktop page-width">
+      <ul class="grid product-grid contains-card contains-card--product grid--3-col-desktop grid--2-col-tablet-down" role="list">
+        {%- assign shown = 0 -%}
+        {%- assign skip_styles = false -%}
+        {%- for p in section.settings.collection.products -%}
+          {%- if p.id != product.id and shown < 3 -%}
+            {%- assign shown = shown | plus: 1 -%}
+            <li class="grid__item">
+              {% render 'card-product',
+                card_product: p,
+                media_aspect_ratio: 'square',
+                image_shape: 'default',
+                lazy_load: true,
+                show_secondary_image: true,
+                show_vendor: false,
+                show_rating: false,
+                skip_styles: skip_styles,
+                section_id: section.id,
+                quick_add: 'none',
+                product_view_context: 'collection'
+              %}
+              {%- assign skip_styles = true -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO related products",
+  "settings": [
+    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Explore the full range" },
+    { "type": "text", "id": "title", "label": "Heading", "default": "More ways to see." },
+    { "type": "select", "id": "heading_size", "label": "Heading size", "default": "h2", "options": [{ "value": "h2", "label": "Medium" }, { "value": "h1", "label": "Large" }] },
+    { "type": "text", "id": "link_label", "label": "Link label", "default": "View all binoculars" },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Top padding", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 56 }
+  ],
+  "presets": [{ "name": "TSO related products" }]
+}
+{% endschema %}

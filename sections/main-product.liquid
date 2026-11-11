@@ -72,6 +72,15 @@
     >
   {%- endif -%}
 
+  {%- assign tso_in_binos = false -%}
+  {%- for c in product.collections -%}{%- if c.handle == 'binoculars' -%}{%- assign tso_in_binos = true -%}{%- endif -%}{%- endfor -%}
+  {%- if tso_in_binos -%}
+    {{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+    <nav class="tso-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ routes.root_url }}">Home</a> / <a href="{{ collections['binoculars'].url }}">Binoculars</a> / <span aria-current="page">{{ product.title | escape }}</span>
+    </nav>
+  {%- endif -%}
+
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <product-component view-event-payload="{{ product | standard_event_data: 'view', context: 'page' | escape }}">
     <div class="page-width">
@@ -98,8 +107,27 @@
                     {{- block.settings.text -}}
                   </p>
                 {%- when 'title' -%}
+                  {%- liquid
+                    assign tso_first = ''
+                    assign tso_second = ''
+                    assign tso_split = false
+                    assign tso_words = product.title | split: ' '
+                    for w in tso_words
+                      assign tso_lead = w | slice: 0, 1 | plus: 0
+                      if tso_split == false and w contains 'x' and tso_lead > 0
+                        assign tso_split = true
+                      endif
+                      if tso_split
+                        assign tso_second = tso_second | append: ' ' | append: w
+                      else
+                        assign tso_first = tso_first | append: ' ' | append: w
+                      endif
+                    endfor
+                    assign tso_first = tso_first | strip | escape
+                    assign tso_second = tso_second | strip | escape
+                  -%}
                   <div class="product__title" {{ block.shopify_attributes }}>
-                    <h1>{{ product.title | escape }}</h1>
+                    <h1>{% if tso_second != blank and tso_first != blank %}{{ tso_first }}<br>{{ tso_second }}{% else %}{{ product.title | escape }}{% endif %}</h1>
                     <a href="{{ product.url }}" class="product__title">
                       <h2 class="h1">
                         {{ product.title | escape }}

@@ -1,0 +1,43 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+<div class="tso tso-faq">
+  <div class="page-width">
+    <div class="tso-faq__layout">
+      <div class="tso-faq__intro">
+        {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        {%- if section.settings.heading != blank -%}<h2 class="tso-display">{{ section.settings.heading }}</h2>{%- endif -%}
+        {%- if section.settings.text != blank -%}<p>{{ section.settings.text }}</p>{%- endif -%}
+      </div>
+      <div class="tso-faq__list">
+        {%- for block in section.blocks -%}
+          <details class="tso-faq__item" {% if forloop.first and section.settings.open_first %}open{% endif %} {{ block.shopify_attributes }}>
+            <summary><span>{{ block.settings.question }}</span><i aria-hidden="true"></i></summary>
+            <div class="tso-faq__answer rte">{{ block.settings.answer }}</div>
+          </details>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO FAQ",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Good to know" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "textarea", "id": "text", "label": "Intro text" },
+    { "type": "checkbox", "id": "open_first", "label": "Open first question", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Question",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question" },
+        { "type": "richtext", "id": "answer", "label": "Answer" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "TSO FAQ" }]
+}
+{% endschema %}

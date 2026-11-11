@@ -52,7 +52,7 @@
           "settings": {
             "icon": "↗",
             "heading": "Compact carry",
-            "text": "Coral HD is the most compact model in this lineup at 9.5 oz, with a 10×25 configuration for travel and sporting events.",
+            "text": "Coral HD is the most compact model in this lineup at 9.5 oz, with a 10x25 configuration for travel and sporting events.",
             "link_label": "Explore Coral HD",
             "link": "shopify://products/tso-coral-10x25-compact-binoculars"
           }
@@ -61,9 +61,9 @@
           "type": "card",
           "settings": {
             "icon": "◎",
-            "heading": "All-around 10×42",
-            "text": "Choose between Marlin HD's fully sealed roof-prism design and Turbine HD's lighter, rainproof roof-prism build.",
-            "link_label": "Compare 10×42 models",
+            "heading": "All-around 10x42",
+            "text": "Choose between Marlin HD’s fully sealed roof-prism design and Turbine HD’s lighter, rainproof roof-prism build.",
+            "link_label": "Compare 10x42 models",
             "link": "shopify://products/marlin-hd-10x42-bird-watching-binoculars"
           }
         },
