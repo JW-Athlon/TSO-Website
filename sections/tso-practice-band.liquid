@@ -1,0 +1,45 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+<div class="tso tso-pband">
+  {%- if section.settings.image != blank -%}
+    {{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'lazy', class: 'tso-pband__bg', widths: '800, 1200, 1800', alt: '' }}
+  {%- endif -%}
+  <div class="tso-pband__inner">
+    <div class="tso-pband__copy">
+      {%- if section.settings.eyebrow != blank -%}<span class="tso-eyebrow tso-eyebrow--light">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="tso-display">{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    <div class="tso-pband__list">
+      {%- for block in section.blocks -%}
+        <div class="tso-pband__item" {{ block.shopify_attributes }}>
+          <b>{{ block.settings.title }}</b>
+          <small>{{ block.settings.text }}</small>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO practice band",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Background image" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+    { "type": "text", "id": "heading", "label": "Heading" },
+    { "type": "textarea", "id": "text", "label": "Text" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Item",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "textarea", "id": "text", "label": "Text" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "TSO practice band" }]
+}
+{% endschema %}

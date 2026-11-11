@@ -1,5 +1,5 @@
 {{ 'tso-sections.css' | asset_url | stylesheet_tag }}
-<div class="tso tso-icards">
+<div class="tso tso-icards{% if section.settings.image_ratio == 'portrait' %} tso-icards--portrait{% endif %}{% if section.settings.columns == '3' %} tso-icards--3{% endif %}">
   <div class="page-width">
     <div class="tso-head tso-head--center">
       <div>
@@ -31,7 +31,9 @@
   "settings": [
     { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
     { "type": "text", "id": "heading", "label": "Heading" },
-    { "type": "textarea", "id": "text", "label": "Intro text" }
+    { "type": "textarea", "id": "text", "label": "Intro text" },
+    { "type": "select", "id": "image_ratio", "label": "Image shape", "default": "square", "options": [{ "value": "square", "label": "Square" }, { "value": "portrait", "label": "Portrait (4:5)" }] },
+    { "type": "select", "id": "columns", "label": "Columns on desktop", "default": "2", "options": [{ "value": "2", "label": "2" }, { "value": "3", "label": "3" }] }
   ],
   "blocks": [
     {

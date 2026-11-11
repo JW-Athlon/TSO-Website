@@ -1,0 +1,30 @@
+{{ 'tso-sections.css' | asset_url | stylesheet_tag }}
+<div class="tso tso-statband">
+  <div class="tso-statband__inner">
+    {%- for block in section.blocks -%}
+      <div class="tso-statband__item" {{ block.shopify_attributes }}>
+        <strong>{{ block.settings.value }}</strong>
+        <small>{{ block.settings.label }}</small>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "TSO stat band",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "199 mph" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Maximum measured speed" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "TSO stat band", "blocks": [{ "type": "stat" }, { "type": "stat" }, { "type": "stat" }, { "type": "stat" }] }]
+}
+{% endschema %}

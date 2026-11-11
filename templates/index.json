@@ -113,7 +113,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop the LM1",
-            "button_link": "shopify://products/lm1-doppler-radar-golf-swing-monitor",
+            "button_link": "/products/lm1-doppler-radar-golf-swing-monitor#tso-buy",
             "button_style_secondary": false
           }
         }

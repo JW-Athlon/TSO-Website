@@ -492,3 +492,57 @@
   .tso-quick__inner { padding-left: max(max(2rem, 6vw), calc((100% - 1400px) / 2 + 50px)); padding-right: max(max(2rem, 6vw), calc((100% - 1400px) / 2 + 50px)); }
   .tso-promo { padding-left: max(clamp(2.2rem, 8vw, 12.5rem), calc((100% - 1400px) / 2 + 50px)); padding-right: max(clamp(2.2rem, 8vw, 12.5rem), calc((100% - 1400px) / 2 + 50px)); }
 }
+
+.tso-icards--portrait .tso-icard__media { aspect-ratio: 4 / 5; }
+
+/* ---------- LM1 page ---------- */
+html { scroll-behavior: smooth; }
+/* The theme hides empty elements (:empty { display: none }), which also made this anchor unscrollable */
+.tso-buy-anchor, .tso-buy-anchor:empty { display: block !important; height: 0; scroll-margin-top: 9rem; }
+
+/* Trust row under the buy box */
+.tso-trust { display: flex; flex-wrap: wrap; gap: 1rem 2.2rem; margin-top: 2.2rem; color: #5b6579; font-size: 1.2rem; }
+.tso-trust span { display: flex; align-items: center; gap: 0.7rem; }
+.tso-trust i { font-style: normal; width: 2.2rem; height: 2.2rem; border: 1px solid #b9c5dd; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.1rem; color: #3a5eab; }
+
+/* Stat band */
+.tso-statband { background: var(--tso-navy); color: #fff; }
+.tso-statband__inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; text-align: center; padding: 3.3rem max(2rem, 6vw); max-width: 140rem; margin: 0 auto; }
+.tso-statband__item strong { display: block; font-family: var(--font-heading-family); font-weight: 400; font-size: 3.6rem; color: var(--tso-orange); margin-bottom: 0.7rem; }
+.tso-statband__item small { font-size: 1.1rem; letter-spacing: 0.1em; text-transform: uppercase; color: #d0d7e6; }
+@media screen and (max-width: 749px) { .tso-statband__inner { grid-template-columns: repeat(2, 1fr); padding: 2.6rem 1.5rem; gap: 2.4rem 1rem; } .tso-statband__item strong { font-size: 2.9rem; } }
+
+/* Story: portrait image variant */
+.tso-pstory--portrait .tso-pstory__image { padding: 0; max-width: 46rem; width: 100%; justify-self: center; }
+.tso-pstory--portrait .tso-pstory__image img { aspect-ratio: 4 / 5; object-fit: cover; }
+
+/* Image cards: 3 across */
+@media screen and (min-width: 990px) { .tso-icards--3 .tso-icards__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 120rem; } }
+@media screen and (min-width: 750px) and (max-width: 989px) { .tso-icards--3 .tso-icards__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Practice band */
+.tso-pband { position: relative; overflow: hidden; background: var(--tso-navy); color: #fff; }
+.tso-pband__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.tso-pband::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(100deg, rgba(5, 8, 15, 0.94), rgba(18, 28, 51, 0.86)); }
+.tso-pband__inner { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 6%; align-items: center; max-width: 140rem; margin: 0 auto; padding: 8rem max(2.2rem, 6vw); }
+.tso-pband__copy h2 { color: #fff; font-size: clamp(3.4rem, 4vw, 4.8rem); margin: 1rem 0 1.6rem; }
+.tso-pband__copy p { font-size: 1.5rem; line-height: 1.8; color: #d0d7e6; max-width: 48rem; margin: 0; }
+.tso-pband__list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; }
+.tso-pband__item { border: 1px solid rgba(255, 255, 255, 0.26); padding: 1.8rem; }
+.tso-pband__item b { display: block; color: var(--tso-orange); font-family: var(--font-heading-family); font-weight: 400; font-size: 2.2rem; margin-bottom: 0.7rem; }
+.tso-pband__item small { display: block; font-size: 1.2rem; line-height: 1.6; color: #dbe2f0; }
+@media screen and (min-width: 750px) { .tso-pband__inner { padding-left: max(max(2.2rem, 6vw), calc((100cqw - 1400px) / 2 + 50px)); padding-right: max(max(2.2rem, 6vw), calc((100cqw - 1400px) / 2 + 50px)); } .tso-pband { container-type: inline-size; } }
+@media screen and (max-width: 749px) { .tso-pband__inner { grid-template-columns: 1fr; padding: 4.8rem 2rem; gap: 2.5rem; } .tso-pband__list { grid-template-columns: 1fr; } }
+
+/* FAQ centered variant */
+.tso-faq--centered .tso-faq__layout { grid-template-columns: 1fr; max-width: 90rem; gap: 3rem; }
+.tso-faq--centered .tso-faq__intro { position: static; text-align: center; }
+.tso-faq--centered .tso-faq__intro p { max-width: 60rem; margin-left: auto; margin-right: auto; }
+
+/* Closing call to action */
+.tso-cta { background: #e8edf6; text-align: center; padding: 6.5rem 2rem; color: var(--tso-ink); }
+.tso-cta h2 { font-size: clamp(3.2rem, 3.6vw, 4rem); margin: 1rem 0; }
+.tso-cta p { max-width: 58rem; margin: 0 auto 2.4rem; color: var(--tso-muted); font-size: 1.4rem; line-height: 1.7; }
+.tso-btn--outline-dark { background: transparent; border-color: #3a5eab; color: #3a5eab; }
+.tso-btn--outline-dark:hover { background: #3a5eab; border-color: #3a5eab; color: #fff; }
+.tso-pstory__image img { display: block; }

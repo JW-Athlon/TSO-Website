@@ -74,12 +74,15 @@
 
   {%- assign tso_in_binos = false -%}
   {%- for c in product.collections -%}{%- if c.handle == 'binoculars' -%}{%- assign tso_in_binos = true -%}{%- endif -%}{%- endfor -%}
-  {%- if tso_in_binos -%}
+  {%- if tso_in_binos or product.handle == 'lm1-doppler-radar-golf-swing-monitor' -%}
     {{ 'tso-sections.css' | asset_url | stylesheet_tag }}
     <nav class="tso-breadcrumb" aria-label="Breadcrumb">
-      <a href="{{ routes.root_url }}">Home</a> / <a href="{{ collections['binoculars'].url }}">Binoculars</a> / <span aria-current="page">{{ product.title | escape }}</span>
+      <a href="{{ routes.root_url }}">Home</a> /
+      {% if tso_in_binos -%}<a href="{{ collections['binoculars'].url }}">Binoculars</a>{%- else -%}<span>Golf Technology</span>{%- endif %} /
+      <span aria-current="page">{{ product.title | escape }}</span>
     </nav>
   {%- endif -%}
+  <div id="tso-buy" class="tso-buy-anchor"></div>
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <product-component view-event-payload="{{ product | standard_event_data: 'view', context: 'page' | escape }}">
