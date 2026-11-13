@@ -9,265 +9,100 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
+    "hero": {
+      "type": "tso-hero",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 0
+        "background_image": "shopify://shop_images/hiking.jpg",
+        "image_opacity": 40,
+        "eyebrow": "About Trusted Sporting Optics",
+        "heading_line1": "Trusted Performance.",
+        "heading_accent": "Exceptional Value.",
+        "text": "Quality sporting optics should be accessible to everyone. TSO delivers reliable, innovative, and affordable optical products without compromising on performance.",
+        "button_label_1": "Explore binoculars",
+        "button_link_1": "/collections/binoculars",
+        "button_label_2": "Discover the LM1",
+        "button_link_2": "/collections/swing-monitor",
+        "float_label": "",
+        "float_value": ""
       }
     },
-    "collection_list_Wbxzek": {
-      "type": "collection-list",
-      "disabled": true,
-      "name": "t:sections.collection-list.presets.name",
+    "mission": {
+      "type": "tso-story-band",
       "settings": {
-        "title": "About Us",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 0
-      }
-    },
-    "image_banner_TkpR8m": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_Kdw3Jj": {
-          "type": "heading",
-          "settings": {
-            "heading": "Optics You Can Trust",
-            "heading_size": "h1"
-          }
-        },
-        "text_BdHtm7": {
-          "type": "text",
-          "settings": {
-            "text": "Whether you’re on vacation in the Pacific Northwest, out at sea on a week-long cruise, or watching your child\u2019s baseball game, TSO is there to ensure you see every detail in vivid clarity.&nbsp;Easy ordering, and no-hassle returns",
-            "text_style": "body"
-          }
-        },
-        "buttons_Y9FqnR": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_Kdw3Jj",
-        "text_BdHtm7",
-        "buttons_Y9FqnR"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/dustin_tso.png",
-        "image_overlay_opacity": 20,
-        "image_height": "adapt",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-left",
-        "desktop_content_alignment": "left",
-        "show_text_box": false,
-        "color_scheme": "scheme-db24ddeb-0002-4fbc-80a8-b9c9f06bef5a",
-        "stack_images_on_mobile": true,
-        "mobile_content_alignment": "center",
-        "show_text_below": true
-      }
-    },
-    "image_with_text_tqFGKG": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_bpacRg": {
-          "type": "heading",
-          "settings": {
-            "heading": "Optics You Can Trust",
-            "heading_size": "h2"
-          }
-        },
-        "text_YV9MLq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whether you’re on vacation in the Pacific Northwest, out at sea on a week-long cruise, or watching your child\u2019s baseball game. TSO is there to ensure you see every detail in vivid clarity.&nbsp;</p><p>Easy ordering, and no-hassle returns</p>",
-            "text_style": "body"
-          }
-        },
-        "button_kBX8Ch": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_bpacRg",
-        "text_YV9MLq",
-        "button_kBX8Ch"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/about-us-image_97406e40-09dc-49ce-a0f9-08a6d0802f2b.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "image_behavior": "none",
-        "content_layout": "no-overlap",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 28
-      }
-    },
-    "multicolumn_QhE7zg": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_XRD7E4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Rubber-Armor.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_JktDNr": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Waterproof.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_DTgHdE": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Rainproof.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_XRD7E4",
-        "column_JktDNr",
-        "column_DTgHdE"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h2",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image": "shopify://shop_images/DSC07812.jpg",
+        "image_position": "left",
+        "eyebrow": "Our mission",
+        "heading": "Quality optics, within everyone's reach.",
+        "text": "From binoculars to golf launch monitors and other sporting optics, TSO focuses on combining practical features, dependable quality, and exceptional value. Whether you're exploring the outdoors, enjoying your favorite sport, or improving your golf game, TSO provides the tools you need at a price that makes sense.",
         "button_label": "",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "button_link": ""
       }
     },
-    "multirow_LaGEM6": {
-      "type": "multirow",
+    "values": {
+      "type": "tso-feature-cards",
       "blocks": {
-        "row_DDTUjd": {
-          "type": "row",
+        "reliable": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/birdwatch.jpg",
-            "caption": "",
-            "heading": "Bird Watching",
-            "text": "<p>Check off your life list with Turbine HD</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "icon": "◎",
+            "heading": "Reliable",
+            "text": "Dependable quality you can count on, trip after trip and round after round."
           }
         },
-        "row_wyaQD9": {
-          "type": "row",
+        "innovative": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/tent.jpg",
-            "caption": "",
-            "heading": "Camping",
-            "text": "<p>Enjoy your surroundings with Polar HD</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "icon": "✦",
+            "heading": "Innovative",
+            "text": "Practical features and smart technology that make your time outdoors and on the course better."
           }
         },
-        "row_7VGXc7": {
-          "type": "row",
+        "affordable": {
+          "type": "card",
           "settings": {
-            "image": "shopify://shop_images/hunting.jpg",
-            "caption": "",
-            "heading": "Hunting",
-            "text": "<p>It's in your sights with Marlin HD</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_ewHdCd": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/sporting-events-3.jpg",
-            "caption": "",
-            "heading": "Sporting Events",
-            "text": "<p>Get in on the action with Coral HD</p>",
-            "button_label": "",
-            "button_link": ""
+            "icon": "$",
+            "heading": "Affordable",
+            "text": "Exceptional value without compromising on performance, at a price that makes sense."
           }
         }
       },
-      "block_order": [
-        "row_DDTUjd",
-        "row_wyaQD9",
-        "row_7VGXc7",
-        "row_ewHdCd"
-      ],
-      "disabled": true,
-      "name": "t:sections.multirow.presets.name",
+      "block_order": ["reliable", "innovative", "affordable"],
       "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "image_layout": "alternate-left",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "mobile_content_alignment": "left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "eyebrow": "What we stand for",
+        "heading": "Built on three simple promises."
+      }
+    },
+    "activities": {
+      "type": "tso-story-band",
+      "settings": {
+        "image": "shopify://shop_images/DSC08668.jpg",
+        "image_position": "right",
+        "eyebrow": "For the moments that matter",
+        "heading": "Outdoors, on the course, and everywhere in between.",
+        "text": "Our lineup brings together binoculars for the trail, the game, and the shoreline, plus golf technology to help you practice with purpose.",
+        "button_label": "Shop all products",
+        "button_link": "/collections/featured"
+      }
+    },
+    "cta": {
+      "type": "tso-cta-band",
+      "settings": {
+        "eyebrow": "TSO",
+        "heading": "Find the right optics for your next outing.",
+        "text": "Explore our binoculars and the LM1 golf swing monitor.",
+        "button_label": "Explore the collection",
+        "button_link": "/collections/binoculars"
+      }
+    }
+    ,"css_flip": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n[id$=\"__hero\"] .tso-hero__bg{transform:scaleX(-1)}\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
-  "order": [
-    "main",
-    "collection_list_Wbxzek",
-    "image_banner_TkpR8m",
-    "image_with_text_tqFGKG",
-    "multicolumn_QhE7zg",
-    "multirow_LaGEM6"
-  ]
+  "order": ["hero", "mission", "values", "activities", "cta", "css_flip"]
 }

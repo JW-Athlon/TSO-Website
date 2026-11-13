@@ -18,7 +18,7 @@
       },
       "block_order": ["n1", "n2", "n3"],
       "settings": {
-        "background_image": "shopify://shop_images/hiking.jpg",
+        "background_image": "shopify://shop_images/DSC07997.jpg",
         "image_opacity": 40,
         "eyebrow": "Clear vision. Confident performance.",
         "heading_line1": "See more.",
@@ -342,7 +342,7 @@
     "tso_story_band": {
       "type": "tso-story-band",
       "settings": {
-        "image": "shopify://shop_images/tent.jpg",
+        "image": "shopify://shop_images/DSC00912.jpg",
         "image_position": "left",
         "eyebrow": "For the moments that matter",
         "heading": "Take in the bigger picture.",

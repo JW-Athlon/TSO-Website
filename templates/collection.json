@@ -24,7 +24,7 @@
         "columns_desktop": 4,
         "columns_mobile": "2",
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -36,10 +36,18 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "css_lm1_card": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<style>\n.product-card-wrapper .card__media .media,.product-card-wrapper .card__inner{background:#fff}\n.product-card-wrapper:has(a[href*=\"lm1\"]) .card__media .media img{object-fit:contain;padding:4%;box-sizing:border-box}\n</style>",
+        "color_scheme": "scheme-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
-  ]
+    "product-grid", "css_lm1_card"]
 }
