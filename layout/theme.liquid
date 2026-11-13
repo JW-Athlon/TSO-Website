@@ -315,6 +315,15 @@
       }
     </script>
   <style>
+    /* Header: logo stays left, menu centered, icons right. Active/hover underline in brand orange. */
+    /* Equal space above and below the logo, menu labels and icons (theme setting was 20px top / 16px bottom) */
+    @media screen and (min-width:750px){.header-wrapper .header{padding-top:1.8rem;padding-bottom:1.8rem}}
+    @media screen and (min-width:990px){
+      .header--middle-left{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:2rem}
+      .header--middle-left .header__inline-menu{justify-self:center;margin-left:0}
+      .header--middle-left .header__inline-menu > .list-menu--inline{justify-content:center}
+      .header__active-menu-item,.header__menu-item:hover span{text-decoration-color:#f99d25;text-decoration-thickness:.2rem}
+    }
     @media screen and (min-width:990px){
       .header__inline-menu .header__menu-item,.header__inline-menu .header__submenu .header__menu-item{font-size:1.8rem}
       .header__submenu.list-menu{padding:0;min-width:25rem;border:0;border-radius:8px;overflow:hidden;box-shadow:0 12px 32px rgba(5,8,15,.28);margin-top:8px}
@@ -324,6 +333,7 @@
       .header__submenu .header__menu-item:hover,.header__submenu .header__menu-item:focus-visible{background:#3a5eab;color:#fff}
     }
   </style>
+  <link rel="stylesheet" href="{{ 'tso-mega-menu.css' | asset_url }}">
   <script src="{{ 'header-menu-click.js' | asset_url }}" defer></script>
   {%- if template.name == 'product' -%}
     <style>

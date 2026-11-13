@@ -28,6 +28,68 @@
                 </span>
                 {{- 'icon-caret.svg' | inline_asset_content -}}
               </summary>
+              {%- liquid
+                assign is_mega = false
+                for childlink in link.links
+                  if childlink.type == 'product_link'
+                    assign is_mega = true
+                  endif
+                endfor
+              -%}
+              {%- if is_mega -%}
+                {%- comment -%}
+                  TSO mega menu: product cards (image, name, price). Images come from the product each menu link points to.
+                {%- endcomment -%}
+                <ul
+                  id="HeaderMenu-MenuList-{{ forloop.index }}"
+                  class="header__submenu header__submenu--mega list-menu list-menu--disclosure"
+                  role="list"
+                  tabindex="-1"
+                >
+                  <li class="tso-mega">
+                    <div class="tso-mega__panel color-{{ section.settings.menu_color_scheme }} gradient">
+                      <ul class="tso-mega__grid" role="list">
+                        {%- for childlink in link.links -%}
+                          {%- liquid
+                            assign mega_product = null
+                            if childlink.type == 'product_link'
+                              assign mega_product = childlink.object
+                            endif
+                          -%}
+                          <li>
+                            <a
+                              id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                              href="{{ childlink.url }}"
+                              class="tso-mega__card{% if childlink.current %} tso-mega__card--active{% endif %}"
+                              {% if childlink.current %}
+                                aria-current="page"
+                              {% endif %}
+                            >
+                              <span class="tso-mega__img">
+                                {%- if mega_product.featured_image -%}
+                                  {{
+                                    mega_product.featured_image
+                                    | image_url: width: 400
+                                    | image_tag: loading: 'lazy', widths: '200, 400', sizes: '200px', alt: mega_product.title
+                                  }}
+                                {%- endif -%}
+                              </span>
+                              <span class="tso-mega__name">{{ childlink.title | escape }}</span>
+                              {%- if mega_product -%}
+                                <span class="tso-mega__price">{{ mega_product.price | money }}</span>
+                              {%- endif -%}
+                            </a>
+                          </li>
+                        {%- endfor -%}
+                      </ul>
+                      <a href="{{ link.url }}" class="tso-mega__all">
+                        Shop all {{ link.title | downcase | escape }}
+                        <span aria-hidden="true">&rarr;</span>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              {%- else -%}
               <ul
                 id="HeaderMenu-MenuList-{{ forloop.index }}"
                 class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
@@ -80,6 +142,7 @@
                   </li>
                 {%- endfor -%}
               </ul>
+              {%- endif -%}
             </details>
           </header-menu>
         {%- else -%}

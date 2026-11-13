@@ -1,0 +1,36 @@
+/* TSO mega menu (desktop): product cards under a top-level menu item whose links point to products. */
+@media screen and (min-width:990px){
+  /* Anchor the mega panel to the full-width header (not the menu label) so it centers on the page */
+  .header-wrapper{position:relative}
+  header-menu > details:has(.header__submenu--mega){position:static}
+  .header__submenu.header__submenu--mega{
+    top:100%;left:0;right:0;margin-left:auto;margin-right:auto;transform:none!important;
+    width:max-content;max-width:min(94vw,92rem);min-width:0;
+    margin-top:0;margin-bottom:0;padding:1.2rem 0 0;animation:none;background:none;border:0;border-radius:0;box-shadow:none;overflow:visible;
+  }
+  /* invisible bridge so the menu stays open while the pointer crosses the gap below the header */
+  .header__submenu--mega::before{content:'';position:absolute;left:0;right:0;top:-3rem;height:3rem}
+  .tso-mega__panel{
+    border-radius:8px;overflow:hidden;padding:2.4rem 2.4rem 0;
+    box-shadow:0 12px 32px rgba(5,8,15,.28);border-top:.3rem solid #f99d25;
+  }
+  .tso-mega__grid{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0}
+  .tso-mega__grid > li{width:19rem;flex:0 0 19rem}
+  .tso-mega__card{
+    display:flex;flex-direction:column;align-items:center;text-align:center;gap:.6rem;height:100%;
+    padding:1rem 1rem 1.4rem;border-radius:8px;border:.1rem solid rgba(var(--color-foreground),.1);
+    text-decoration:none!important;color:rgb(var(--color-foreground));
+    transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease;
+  }
+  .tso-mega__card:hover,.tso-mega__card:focus-visible{border-color:#3a5eab;transform:translateY(-3px);box-shadow:0 8px 20px rgba(58,94,171,.2)}
+  .tso-mega__card--active{border-color:#f99d25}
+  .tso-mega__img{display:block;width:100%;aspect-ratio:1;background:#fff;border-radius:6px;overflow:hidden}
+  .tso-mega__img img{width:100%;height:100%;object-fit:contain;padding:6%;box-sizing:border-box;display:block}
+  .tso-mega__name{font-weight:600;font-size:1.7rem;line-height:1.2}
+  .tso-mega__price{font-size:1.4rem;color:#3a5eab;font-weight:600}
+  .tso-mega__all{
+    display:block;margin:2rem -2.4rem 0;padding:1.3rem 2.4rem;text-align:center;font-weight:600;font-size:1.5rem;
+    background:#3a5eab;color:#fff;text-decoration:none!important;transition:background-color .15s ease;
+  }
+  .tso-mega__all:hover,.tso-mega__all:focus-visible{background:#2f4d8f;color:#fff}
+}
