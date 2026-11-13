@@ -105,7 +105,7 @@
         "text_XEFXmW": {
           "type": "text",
           "settings": {
-            "text": "<p>Simple. Portable. Instant feedback.</p><p>Doppler radar up to 199 mph · 5.6 oz</p><p>Sunlight-readable display · Stores 500 shots</p>",
+            "text": "<p>Simple. Portable. Instant feedback.</p><p>Ball speed, club speed, and accurate carry distance</p><p>Sunlight-readable display · Stores 500 shots</p>",
             "text_style": "body"
           }
         },
@@ -354,15 +354,16 @@
     "tso_lm_promo": {
       "type": "tso-lm-promo",
       "blocks": {
-        "stat_speed": { "type": "stat", "settings": { "value": "199 mph", "label": "Maximum speed" } },
-        "stat_shots": { "type": "stat", "settings": { "value": "500", "label": "Shot history" } },
-        "stat_weight": { "type": "stat", "settings": { "value": "5.6 oz", "label": "Device weight" } }
+        "stat_ball": { "type": "stat", "settings": { "value": "Ball speed", "label": "High-precision" } },
+        "stat_club": { "type": "stat", "settings": { "value": "Club speed", "label": "Accurate tracking" } },
+        "stat_carry": { "type": "stat", "settings": { "value": "Carry", "label": "Distance accuracy" } },
+        "stat_shots": { "type": "stat", "settings": { "value": "500", "label": "Shot history" } }
       },
-      "block_order": ["stat_speed", "stat_shots", "stat_weight"],
+      "block_order": ["stat_ball", "stat_club", "stat_carry", "stat_shots"],
       "settings": {
         "eyebrow": "Meet the TSO-LM1",
         "heading": "Better practice starts with better feedback.",
-        "text": "The TSO-LM1 uses Doppler radar to measure speeds up to 199 mph. Its sunlight-readable LCD, rechargeable battery, and storage for up to 500 shots make it a compact companion for practice sessions.",
+        "text": "The TSO-LM1 tracks ball speed and club speed and calculates carry distance with an advanced calculation engine for accurate, reliable data. Its sunlight-readable LCD, rechargeable battery, and storage for up to 500 shots make it a compact companion for practice sessions.",
         "button_label": "Explore the LM1",
         "button_link": "shopify://products/lm1-doppler-radar-golf-swing-monitor",
         "image": "shopify://shop_images/Frame_356_1.png",

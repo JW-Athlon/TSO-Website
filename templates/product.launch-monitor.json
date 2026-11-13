@@ -59,7 +59,7 @@
         "tso_stats": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"tso-stats\"><div><strong>199 mph</strong><small>Maximum speed</small></div><div><strong>500</strong><small>Shot history</small></div><div><strong>5.6 oz</strong><small>Lightweight</small></div></div>"
+            "custom_liquid": "<div class=\"tso-stats\"><div><strong style=\"font-size:1.9rem\">Ball speed</strong><small>High-precision</small></div><div><strong style=\"font-size:1.9rem\">Club speed</strong><small>Accurate tracking</small></div><div><strong style=\"font-size:1.9rem\">Carry</strong><small>Distance accuracy</small></div></div>"
           }
         },
         "tso_trust": {
@@ -104,29 +104,29 @@
         "s0": {
           "type": "stat",
           "settings": {
-            "value": "199 mph",
-            "label": "Maximum measured speed"
-          }
-        },
-        "s1": {
-          "type": "stat",
-          "settings": {
             "value": "500",
             "label": "Shots stored"
           }
         },
-        "s2": {
+        "s1": {
           "type": "stat",
           "settings": {
             "value": "5.6 oz",
             "label": "Device weight"
           }
         },
-        "s3": {
+        "s2": {
           "type": "stat",
           "settings": {
             "value": "400 × 300",
             "label": "LCD resolution"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "value": "5+ hrs",
+            "label": "Battery life"
           }
         }
       },
@@ -257,14 +257,14 @@
           "type": "item",
           "settings": {
             "question": "What is Doppler radar and why does the LM1 use it?",
-            "answer": "<p>Doppler radar measures speed by tracking how a moving object changes the signal it reflects. The LM1 uses it to provide fast, convenient speed readings during practice, up to 199 mph.</p>"
+            "answer": "<p>Doppler radar measures speed by tracking how a moving object changes the signal it reflects. The LM1 uses it to deliver fast, accurate readings of ball speed, club speed, and carry distance during practice.</p>"
           }
         },
         "faq_2": {
           "type": "item",
           "settings": {
             "question": "What does the LM1 measure?",
-            "answer": "<p>The LM1 uses Doppler radar to measure speed, up to 199 mph, and shows the result on its built-in display so you get feedback after each swing.</p>"
+            "answer": "<p>The LM1 measures ball speed, club speed, smash factor, and carry distance, with an advanced calculation engine for accurate, reliable carry data. Results appear instantly on its large, sunlight-readable display.</p>"
           }
         },
         "faq_3": {

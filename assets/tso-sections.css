@@ -424,6 +424,14 @@
 .tso-specs__intro { position: sticky; top: 12rem; }
 .tso-specs__intro h2 { font-size: clamp(3.2rem, 4vw, 5rem); letter-spacing: -0.04em; margin: 1.3rem 0 1.8rem; }
 .tso-specs__intro p { font-size: 1.4rem; line-height: 1.85; color: var(--tso-muted); }
+.tso-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem 2.6rem; margin-top: 3.6rem; }
+.tso-rating__head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.8rem; font-size: 1.1rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; color: #34415c; }
+.tso-rating__head strong { font-size: 1.8rem; letter-spacing: 0; color: var(--tso-ink, #111827); }
+.tso-rating__head small { font-size: 1.1rem; font-weight: 600; color: var(--tso-muted); }
+.tso-rating__bar { display: grid; grid-template-columns: repeat(10, 1fr); gap: 0.3rem; }
+.tso-rating__bar i { height: 0.8rem; background: #e8edf6; }
+.tso-rating__bar i.on { background: #3a5eab; }
+.tso-rating__bar i.half { background: linear-gradient(90deg, #3a5eab 50%, #e8edf6 50%); }
 .tso-specs__pills { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2.4rem; }
 .tso-specs__pills span { background: #e8edf6; padding: 0.8rem 1rem; color: #34415c; font-size: 1rem; font-weight: 750; letter-spacing: 0.05em; text-transform: uppercase; }
 .tso-specs__table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--tso-line); font-size: 1.3rem; }
