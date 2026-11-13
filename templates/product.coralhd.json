@@ -72,7 +72,7 @@
         "tab_overview": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Product overview",
+            "heading": "Product Overview",
             "icon": "none",
             "content": "<p>A compact 10x25 Porro-prism binocular with anti-reflective coating, rubber armor, and rainproof nitrogen-purged construction.</p>",
             "page": ""
@@ -82,7 +82,7 @@
         "tab_features": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Features & construction",
+            "heading": "Features & Construction",
             "icon": "none",
             "content": "<p>Rubber armor provides an external protective coating against bumps and drops. Nitrogen-purged construction provides internal moisture protection. The Coral HD is rainproof, not fully waterproof, and should not be submerged.</p>",
             "page": ""
@@ -92,7 +92,7 @@
         "tab_warranty": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Warranty & returns",
+            "heading": "Warranty & Returns",
             "icon": "none",
             "content": "<p>All TSO binoculars are covered by a 3-year limited warranty. [Return policy details to be added.]</p>",
             "page": ""
@@ -195,21 +195,21 @@
         "c0": {
           "type": "callout",
           "settings": {
-            "title": "10x25 Porro-prism configuration",
+            "title": "10x25 Porro-Prism Configuration",
             "text": "A compact format with a 2.5 mm exit pupil."
           }
         },
         "c1": {
           "type": "callout",
           "settings": {
-            "title": "289 ft field of view at 1,000 yd",
+            "title": "289 ft Field of View at 1,000 yd",
             "text": "Follow movement across a wide viewing area."
           }
         },
         "c2": {
           "type": "callout",
           "settings": {
-            "title": "13.1 ft close focus",
+            "title": "13.1 ft Close Focus",
             "text": "Focus on subjects as close as 13.1 feet."
           }
         }
@@ -446,7 +446,7 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Shipping & returns",
+            "heading": "Shipping & Returns",
             "heading_size": "h2"
           }
         },
@@ -485,7 +485,7 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "What customers are saying",
+            "heading": "What Customers Are Saying",
             "heading_size": "h2"
           }
         },

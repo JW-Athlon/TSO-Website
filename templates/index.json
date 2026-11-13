@@ -243,8 +243,8 @@
           "settings": {
             "image": "shopify://shop_images/birdwatch.jpg",
             "title": "Bird Watching",
-            "text": "<p>Check off your life list with Turbine HD</p>",
-            "link_label": "Shop Turbine HD",
+            "text": "<p>Check off your life list with Turbine</p>",
+            "link_label": "Shop Turbine",
             "link": "shopify://products/turbine-hd-10x42-roof-prism-binoculars"
           }
         },
@@ -253,8 +253,8 @@
           "settings": {
             "image": "shopify://shop_images/tent.jpg",
             "title": "Camping",
-            "text": "<p>Enjoy your surroundings with Polar HD</p>",
-            "link_label": "Shop Polar HD",
+            "text": "<p>Enjoy your surroundings with Polar</p>",
+            "link_label": "Shop Polar",
             "link": "shopify://products/tso-polar-hd-10x50-binoculars"
           }
         },
@@ -263,8 +263,8 @@
           "settings": {
             "image": "shopify://shop_images/hunting.jpg",
             "title": "Hunting",
-            "text": "<p>It’s in your sights with Marlin HD</p>",
-            "link_label": "Shop Marlin HD",
+            "text": "<p>It’s in your sights with Marlin</p>",
+            "link_label": "Shop Marlin",
             "link": "shopify://products/marlin-hd-10x42-bird-watching-binoculars"
           }
         },
@@ -273,8 +273,8 @@
           "settings": {
             "image": "shopify://shop_images/sporting-events-3.jpg",
             "title": "Sporting Events",
-            "text": "<p>Get in on the action with Coral HD</p>",
-            "link_label": "Shop Coral HD",
+            "text": "<p>Get in on the action with Coral</p>",
+            "link_label": "Shop Coral",
             "link": "shopify://products/tso-coral-10x25-compact-binoculars"
           }
         }
@@ -354,12 +354,12 @@
     "tso_lm_promo": {
       "type": "tso-lm-promo",
       "blocks": {
-        "stat_ball": { "type": "stat", "settings": { "value": "Ball speed", "label": "High-precision" } },
-        "stat_club": { "type": "stat", "settings": { "value": "Club speed", "label": "Accurate tracking" } },
+        "stat_speed": { "type": "stat", "settings": { "value": "Ball Speed", "label": "High-precision tracking" } },
         "stat_carry": { "type": "stat", "settings": { "value": "Carry", "label": "Distance accuracy" } },
-        "stat_shots": { "type": "stat", "settings": { "value": "500", "label": "Shot history" } }
+        "stat_shots": { "type": "stat", "settings": { "value": "500", "label": "Shot history" } },
+        "stat_battery": { "type": "stat", "settings": { "value": "5+ hrs", "label": "Battery life" } }
       },
-      "block_order": ["stat_ball", "stat_club", "stat_carry", "stat_shots"],
+      "block_order": ["stat_speed", "stat_carry", "stat_shots", "stat_battery"],
       "settings": {
         "eyebrow": "Meet the TSO-LM1",
         "heading": "Better practice starts with better feedback.",

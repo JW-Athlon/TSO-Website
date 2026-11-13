@@ -200,14 +200,14 @@
         "i0": {
           "type": "item",
           "settings": {
-            "title": "Doppler radar",
+            "title": "Doppler Radar",
             "text": "Speed measurement technology for convenient practice feedback."
           }
         },
         "i1": {
           "type": "item",
           "settings": {
-            "title": "500-shot history",
+            "title": "500-Shot History",
             "text": "Stores up to 500 shots so you can review previous results."
           }
         },
@@ -221,7 +221,7 @@
         "i3": {
           "type": "item",
           "settings": {
-            "title": "Outdoor-ready",
+            "title": "Outdoor-Ready",
             "text": "Sunlight-readable LCD with no backlight required."
           }
         }
@@ -342,7 +342,7 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "Shipping & returns",
+            "heading": "Shipping & Returns",
             "heading_size": "h2"
           }
         },
@@ -381,7 +381,7 @@
         "h": {
           "type": "heading",
           "settings": {
-            "heading": "What golfers are saying",
+            "heading": "What Golfers Are Saying",
             "heading_size": "h2"
           }
         },
